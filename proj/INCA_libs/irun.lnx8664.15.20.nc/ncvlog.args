@@ -1,0 +1,21 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-LINEDEBUG
+/home/vlsi16/24bvd1023/proj/intel_4004_datapath.v
+/home/vlsi16/24bvd1023/proj/intel_4004_fsm.v
+/home/vlsi16/24bvd1023/proj/intel_4004_top.v
+/home/vlsi16/24bvd1023/proj/tb_intel_4004.v
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

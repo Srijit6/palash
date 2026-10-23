@@ -1,0 +1,53 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> run
+0 ns a=0 b=0 c=0 sum=0 cout=0
+10 ns a=1 b=0 c=0 sum=1 cout=0
+20 ns a=0 b=1 c=0 sum=1 cout=0
+30 ns a=0 b=0 c=1 sum=1 cout=0
+Simulation complete via $finish(1) at time 40 NS + 0
+./sim/fa_tb.v:12 $finish;
+ncsim> coverage -analyze
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  10
+  expressions :  0
+  toggle signals :  20
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fa_tb(fa_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3d372bd8_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_3d372bd8_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fa_tb(fa_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3d372bd8_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_3d372bd8_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 291.2M data = 329.8M total (337.8M Peak)
+ncsim: CPU Usage - 0.7s system + 0.3s user = 1.0s total (451.5s, 0.2% cpu)

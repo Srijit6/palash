@@ -1,0 +1,99 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:01:48.328626] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: 
+Date:    Wed Sep 09 18:01:48 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1045064
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:01:49.435721] Periodic Lic check successful
+[18:01:49.435731] Feature usage summary:
+[18:01:49.435731] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 1539 days old.
+@genus:root: 1> # 1. Load the 90nm slow-corner timing library
+@genus:root: 2> set_db / .library {../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib}
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file '../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File '../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value '../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+@genus:root: 3> 
+@genus:root: 3> # 2. Read the RTL HDL file
+@genus:root: 4> read_hdl fir_4tap_shared_mult.v
+@genus:root: 5> 
+@genus:root: 5> # 3. Elaborate top-level design
+@genus:root: 6> elaborate fir_4tap_shared_mult
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+@genus:root: 7> 
+@genus:root: 7> # 4. Read your SDC constraints
+@genus:root: 8> read_sdc fir_4tap_shared_mult.sdc
+Design not exist for read_sdc
+@genus:root: 9> 
+@genus:root: 9> # 5. Synthesize to generic and map to 90nm gates
+@genus:root: 10> syn_generic
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+1
+@genus:root: 11> syn_map
+Error   : Failed to execute command. [LBR-163] [syn_map]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_map
+1
+@genus:root: 12> syn_opt
+Error   : Failed to execute command. [LBR-163] [syn_opt]
+        : No target technology library was loaded.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_opt
+1
+@genus:root: 13> 
+@genus:root: 13> # 6. Export the gate-level netlist and updated SDC
+@genus:root: 14> write_hdl > fir_4tap_shared_mult_synth.v
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [write_hdl]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+Failed on find_unique_design
+@genus:root: 15> write_sdc > fir_4tap_shared_mult_synth.sdc
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [write_sdc]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 16> 
+@genus:root: 16> # 7. Exit Genus
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 42s, ST: 5s, FG: 5s, CPU: 1.9%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.0, cpu: 64, total: 2014.9G, free: 1874.6G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 146s, ST: 6s, FG: 6s, CPU: 1.8%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.0, cpu: 64, total: 2014.9G, free: 1875.0G}
+Abnormal exit.

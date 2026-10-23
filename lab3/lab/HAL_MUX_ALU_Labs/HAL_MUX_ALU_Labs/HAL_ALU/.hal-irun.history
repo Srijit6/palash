@@ -1,0 +1,2 @@
+s1(29Jul2026:11:54:09):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v 
+s2(29Jul2026:11:59:13):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v 

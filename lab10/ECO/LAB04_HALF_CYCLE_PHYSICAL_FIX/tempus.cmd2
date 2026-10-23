@@ -1,0 +1,21 @@
+#######################################################
+#                                                     
+#  Tempus Timing Solution Command Logging File                     
+#  Created on Thu Oct 15 18:25:49 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+#@(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+#@(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+#@(#)CDS: CPE v22.11-e028
+
+read_lib /home/vlsi16/24bvd1023/lab10/ECO/LAB04_HALF_CYCLE_PHYSICAL_FIX/lib/teaching_sta_physical.lib
+read_verilog /home/vlsi16/24bvd1023/lab10/ECO/LAB04_HALF_CYCLE_PHYSICAL_FIX/netlist/01_fail.v
+set_top_module half_physical
+read_sdc /home/vlsi16/24bvd1023/lab10/ECO/LAB04_HALF_CYCLE_PHYSICAL_FIX/sdc/01_fail.sdc
+report_timing -late -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+report_timing -early -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+exit

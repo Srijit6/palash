@@ -1,0 +1,18 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_mac_pipelined.a tb_mac_pipelined.b tb_mac_pipelined.clk tb_mac_pipelined.en tb_mac_pipelined.out tb_mac_pipelined.rst_n
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 53 NS + 0
+./tb_mac_pipelined.v:43         #20.0 $finish;
+ncsim> ^C
+ncsim> exit
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+ncsim: Memory Usage - 38.6M program + 279.0M data = 317.6M total (321.2M Peak)
+ncsim: CPU Usage - 1.1s system + 0.4s user = 1.5s total (466.0s, 0.3% cpu)

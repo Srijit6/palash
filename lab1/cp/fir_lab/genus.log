@@ -1,0 +1,226 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[17:39:16.328666] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files syn_all.tcl 
+Date:    Thu Sep 10 17:39:16 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     2944701
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[17:39:17.327792] Periodic Lic check successful
+[17:39:17.327801] Feature usage summary:
+[17:39:17.327801] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source syn_all.tcl
+#@ Begin verbose source ./syn_all.tcl
+@file(syn_all.tcl) 35: set LAB_ROOT  "/home/vlsi38/24BVD1104/SUBMISSION/fir_lab"
+@file(syn_all.tcl) 36: set GENUS_BIN "genus"
+@file(syn_all.tcl) 40: set DESIGNS {
+    {fir                 fir_4tap              fir_4tap.v              fir_4tap.sdc}
+    {fir_piplined        fir_4tap_pipelined    fir_4tap_pipelined.v    fir_4tap_pipelined.sdc}
+    {fir_area_optimized  fir_4tap_shared_mult  fir_4tap_shared_mult.v  fir_4tap_shared_mult.sdc}
+}
+@file(syn_all.tcl) 49: set LIB_DIR(180) "/home/install/FOUNDRY/digital/180nm/dig/lib"
+@file(syn_all.tcl) 50: set LIB_DIR(90)  "/home/install/FOUNDRY/digital/90nm/dig/lib"
+@file(syn_all.tcl) 51: set LIB_DIR(45)  "/home/install/FOUNDRY/digital/45nm/dig/lib"
+@file(syn_all.tcl) 53: set NODES   {180 90 45}
+@file(syn_all.tcl) 54: set CORNERS {slow typical fast}
+@file(syn_all.tcl) 60: if {[info exists ::env(FIR_SWEEP_CFG)]} {
+
+    lassign [split $::env(FIR_SWEEP_CFG) "|"] \
+            TOP_MODULE RTL_PATH SDC_PATH LIB_FILE LIB_PATH RUNDIR
+
+    set_db syn_generic_effort medium
+    set_db syn_map_effort     medium
+    set_db syn_opt_effort     medium
+
+    set_db init_hdl_search_path [file dirname $RTL_PATH]
+    set_db init_lib_search_path $LIB_PATH
+
+    read_libs $LIB_FILE
+
+    read_hdl   $RTL_PATH
+    elaborate  $TOP_MODULE
+    read_sdc   $SDC_PATH
+
+    syn_generic
+    write_hdl > ${RUNDIR}/netlist/${TOP_MODULE}_generic.v
+    syn_map
+    write_hdl > ${RUNDIR}/netlist/${TOP_MODULE}_mapped.v
+    syn_opt
+    write_hdl > ${RUNDIR}/netlist/${TOP_MODULE}_opt.v
+
+    write_sdc > ${RUNDIR}/constraints/${TOP_MODULE}_synth.sdc
+
+    report_timing > ${RUNDIR}/reports/${TOP_MODULE}_timing.rpt
+    report_power  > ${RUNDIR}/reports/${TOP_MODULE}_power.rpt
+    report_area   > ${RUNDIR}/reports/${TOP_MODULE}_area.rpt
+    report_gates  > ${RUNDIR}/reports/${TOP_MODULE}_gates.rpt
+    report_qor    > ${RUNDIR}/reports/${TOP_MODULE}_qor.rpt
+
+    exit 0
+}
+@file(syn_all.tcl) 102: set SCRIPT_PATH [file normalize [info script]]
+@file(syn_all.tcl) 103: if {$SCRIPT_PATH eq "" || ![file exists $SCRIPT_PATH]} {
+    set SCRIPT_PATH [file join $LAB_ROOT "syn_all.tcl"]
+}
+@file(syn_all.tcl) 106: if {![file exists $SCRIPT_PATH]} {
+    puts "ERROR: cannot locate this script to re-launch. Expected: $SCRIPT_PATH"
+    exit 1
+}
+@file(syn_all.tcl) 111: if {[auto_execok $GENUS_BIN] eq ""} {
+    puts "ERROR: '$GENUS_BIN' not found in PATH."
+    exit 1
+}
+@file(syn_all.tcl) 120: proc find_lib ...
+@file(syn_all.tcl) 144: set SUMMARY {}
+@file(syn_all.tcl) 145: set NRUN 0
+@file(syn_all.tcl) 146: set NOK  0
+@file(syn_all.tcl) 148: puts "\n#########################################################"
+
+#########################################################
+@file(syn_all.tcl) 149: puts "# FIR synthesis sweep"
+# FIR synthesis sweep
+@file(syn_all.tcl) 150: puts "# Script : $SCRIPT_PATH"
+# Script : /home/vlsi16/24bvd1023/fir_lab/syn_all.tcl
+@file(syn_all.tcl) 151: puts "# Root   : $LAB_ROOT"
+# Root   : /home/vlsi38/24BVD1104/SUBMISSION/fir_lab
+@file(syn_all.tcl) 152: puts "#########################################################"
+#########################################################
+@file(syn_all.tcl) 154: foreach entry $DESIGNS {
+
+    lassign $entry FOLDER TOP_MODULE RTL_FILE SDC_FILE
+
+    set SRC_DIR  "${LAB_ROOT}/${FOLDER}"
+    set RTL_PATH "${SRC_DIR}/${RTL_FILE}"
+    set SDC_PATH "${SRC_DIR}/${SDC_FILE}"
+
+    if {![file isdirectory $SRC_DIR]} {
+        puts "WARNING: design folder not found, skipping : $SRC_DIR"
+        lappend SUMMARY [format "%-20s %-8s %-5s  SKIPPED (no folder)" $FOLDER - -]
+        continue
+    }
+    if {![file exists $RTL_PATH]} {
+        puts "WARNING: RTL not found, skipping : $RTL_PATH"
+        lappend SUMMARY [format "%-20s %-8s %-5s  SKIPPED (no RTL)" $FOLDER - -]
+        continue
+    }
+    if {![file exists $SDC_PATH]} {
+        puts "WARNING: SDC not found, skipping : $SDC_PATH"
+        lappend SUMMARY [format "%-20s %-8s %-5s  SKIPPED (no SDC)" $FOLDER - -]
+        continue
+    }
+
+    foreach corner $CORNERS {
+        foreach node $NODES {
+
+            set dir $LIB_DIR($node)
+
+            if {![file isdirectory $dir]} {
+                puts "WARNING: library dir missing, skipping ${FOLDER} ${corner}/${node} : $dir"
+                lappend SUMMARY [format "%-20s %-8s %-5s  SKIPPED (no lib dir)" $FOLDER $corner $node]
+                continue
+            }
+
+            set libfile [find_lib $dir $corner]
+            if {$libfile eq ""} {
+                puts "WARNING: no '$corner' .lib in $dir, skipping ${FOLDER} ${corner}/${node}"
+                lappend SUMMARY [format "%-20s %-8s %-5s  SKIPPED (no lib file)" $FOLDER $corner $node]
+                continue
+            }
+
+            set RUNDIR "${SRC_DIR}/${corner}/${node}"
+            file mkdir ${RUNDIR}/netlist
+            file mkdir ${RUNDIR}/constraints
+            file mkdir ${RUNDIR}/reports
+
+            set LOGFILE "${RUNDIR}/genus_run.log"
+
+            incr NRUN
+            puts "\n========================================================="
+            puts " \[$NRUN\] $TOP_MODULE   ($FOLDER)"
+            puts "     Node    : ${node}nm     Corner : $corner"
+            puts "     Library : $libfile"
+            puts "     Output  : $RUNDIR"
+            puts "     Log     : $LOGFILE"
+            puts "========================================================="
+            flush stdout
+
+            # Hand the config to the child through the environment
+            set ::env(FIR_SWEEP_CFG) \
+                [join [list $TOP_MODULE $RTL_PATH $SDC_PATH \
+                            $libfile $dir $RUNDIR] "|"]
+
+            set rc [catch {
+                exec $GENUS_BIN -overwrite \
+                                -log_file $LOGFILE \
+                                -files $SCRIPT_PATH \
+                                >@ stdout 2>@ stderr
+            } errmsg]
+
+            unset ::env(FIR_SWEEP_CFG)
+
+            # Confirm the run actually produced its netlist
+            set produced [file exists ${RUNDIR}/netlist/${TOP_MODULE}_opt.v]
+
+            if {$rc == 0 && $produced} {
+                incr NOK
+                lappend SUMMARY [format "%-20s %-8s %-5s  DONE" $FOLDER $corner $node]
+            } else {
+                puts "ERROR: run failed for ${FOLDER} ${corner}/${node}"
+                if {$errmsg ne ""} { puts "       $errmsg" }
+                puts "       See $LOGFILE"
+                lappend SUMMARY [format "%-20s %-8s %-5s  FAILED (see log)" $FOLDER $corner $node]
+            }
+            flush stdout
+        }
+    }
+}
+WARNING: design folder not found, skipping : /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/fir
+WARNING: design folder not found, skipping : /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/fir_piplined
+WARNING: design folder not found, skipping : /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/fir_area_optimized
+@file(syn_all.tcl) 245: puts "\n===================== SWEEP SUMMARY ====================="
+
+===================== SWEEP SUMMARY =====================
+@file(syn_all.tcl) 246: foreach line $SUMMARY { puts "  $line" }
+  fir                  -        -      SKIPPED (no folder)
+  fir_piplined         -        -      SKIPPED (no folder)
+  fir_area_optimized   -        -      SKIPPED (no folder)
+@file(syn_all.tcl) 247: puts "---------------------------------------------------------"
+---------------------------------------------------------
+@file(syn_all.tcl) 248: puts "  Completed $NOK of $NRUN attempted runs"
+  Completed 0 of 0 attempted runs
+@file(syn_all.tcl) 249: puts "  Reports  : <design>/<corner>/<node>/reports/"
+  Reports  : <design>/<corner>/<node>/reports/
+@file(syn_all.tcl) 250: puts "  Netlists : <design>/<corner>/<node>/netlist/"
+  Netlists : <design>/<corner>/<node>/netlist/
+@file(syn_all.tcl) 251: puts "========================================================="
+=========================================================
+@file(syn_all.tcl) 253: exit 0
+
+Lic Summary:
+[17:39:23.439289] Cdslmd servers: cadence-c2s
+[17:39:23.439296] Feature usage summary:
+[17:39:23.439296] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,43 @@
+[10/09 12:00:13      0s] 
+[10/09 12:00:13      0s] Cadence Tempus(TM) Timing Solution.
+[10/09 12:00:13      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/09 12:00:13      0s] 
+[10/09 12:00:13      0s] Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+[10/09 12:00:13      0s] Options:	-files scripts/01_run_fail.v 
+[10/09 12:00:13      0s] Date:		Fri Oct  9 12:00:13 2026
+[10/09 12:00:13      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[10/09 12:00:13      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[10/09 12:00:13      0s] 
+[10/09 12:00:13      0s] License:
+[10/09 12:00:13      0s] 		[12:00:13.328506] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[10/09 12:00:14      0s] 		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+[10/09 12:00:14      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[10/09 12:00:23      8s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+[10/09 12:00:27     12s] @(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+[10/09 12:00:27     12s] @(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/09 12:00:27     12s] @(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+[10/09 12:00:27     12s] @(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+[10/09 12:00:27     12s] @(#)CDS: CPE v22.11-e028
+[10/09 12:00:27     12s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/09 12:00:27     12s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[10/09 12:00:27     12s] @(#)CDS: RCDB 11.15.0
+[10/09 12:00:27     12s] @(#)CDS: STYLUS 22.10-p002_1 (09/01/2022 08:10 PDT)
+[10/09 12:00:27     12s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[10/09 12:00:27     12s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_4045311_ZwNaLw'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_4045311_ZwNaLw'.
+[10/09 12:00:28     13s] #@ Processing -files option
+[10/09 12:00:28     13s] **ERROR: (UI-97):	Initfile "scripts/01_run_fail.v" does not exist. Remove "-init tclFileName" option or specify correct tclFileName and rerun. 
+[10/09 12:00:42     13s] **INFO (INTERRUPT): The current script will stop before next command.
+[10/09 12:00:42     13s] **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Solution ...
+[10/09 12:00:43     13s] Tempus Timing Solution terminated by user interrupt.
+[10/09 12:00:43     13s] 
+[10/09 12:00:43     13s] *** Memory Usage v#1 (Current mem = 1290.996M, initial mem = 618.465M) ***
+[10/09 12:00:43     13s] 
+[10/09 12:00:43     13s] *** Summary of all messages that are not suppressed in this session:
+[10/09 12:00:43     13s] Severity  ID               Count  Summary                                  
+[10/09 12:00:43     13s] ERROR     UI-97                1  %s does not exist. Remove %s option or s...
+[10/09 12:00:43     13s] *** Message Summary: 0 warning(s), 1 error(s)
+[10/09 12:00:43     13s] 
+[10/09 12:00:43     13s] --- Ending "Tempus Timing Solution" (totcpu=0:00:13.8, real=0:00:30.0, mem=1291.0M) ---

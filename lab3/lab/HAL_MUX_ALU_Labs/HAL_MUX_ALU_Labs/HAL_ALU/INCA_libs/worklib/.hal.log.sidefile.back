@@ -1,0 +1,19 @@
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: alu_good
+halsynth: *W,MULBAS (./rtl/alu_good.v,5|0): In module 'alu_good', register 'y' has multiple blocking assignments.
+halsynth: (./rtl/alu_good.v,10|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./rtl/alu_good.v,13|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./rtl/alu_good.v,14|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./rtl/alu_good.v,15|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./rtl/alu_good.v,16|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./rtl/alu_good.v,17|0): Source HDL information for the error/warning mentioned above.
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.

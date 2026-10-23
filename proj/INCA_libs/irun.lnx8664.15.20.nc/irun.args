@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-s
++gui
++linedebug
++access+rwc
+-timescale
+1ns/1ps
+/home/vlsi16/24bvd1023/proj/intel_4004_datapath.v
+/home/vlsi16/24bvd1023/proj/intel_4004_fsm.v
+/home/vlsi16/24bvd1023/proj/intel_4004_top.v
+/home/vlsi16/24bvd1023/proj/tb_intel_4004.v

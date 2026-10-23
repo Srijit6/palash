@@ -1,0 +1,76 @@
+[09/09 18:32:33      0s] 
+[09/09 18:32:33      0s] Cadence Innovus(TM) Implementation System.
+[09/09 18:32:33      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/09 18:32:33      0s] 
+[09/09 18:32:33      0s] Version:	v21.15-s110_1, built Wed Sep 09 13:08:12 PDT 2022
+[09/09 18:32:33      0s] Options:	
+[09/09 18:32:33      0s] Date:		Wed Sep  9 18:32:33 2026
+[09/09 18:32:33      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[09/09 18:32:33      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[09/09 18:32:33      0s] 
+[09/09 18:32:33      0s] License:
+[09/09 18:32:33      0s] 		[18:32:33.328610] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[09/09 18:32:35      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[09/09 18:32:35      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/09 18:32:44      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[09/09 18:32:46     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[09/09 18:32:46     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[09/09 18:32:46     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[09/09 18:32:46     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[09/09 18:32:46     11s] @(#)CDS: CPE v21.15-s076
+[09/09 18:32:46     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Wed Sep 09 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[09/09 18:32:46     11s] @(#)CDS: OA 22.60-p076 Wed Sep 09 13:45:29 2022
+[09/09 18:32:46     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[09/09 18:32:46     11s] @(#)CDS: RCDB 11.15.0
+[09/09 18:32:46     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[09/09 18:32:46     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[09/09 18:32:46     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1215688_cad312vitcc.vit.ac.in_vlsi16_SlpF98.
+
+[09/09 18:32:46     11s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[09/09 18:32:47     12s] 
+[09/09 18:32:47     12s] **INFO:  MMMC transition support version v31-84 
+[09/09 18:32:47     12s] 
+[09/09 18:32:47     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/09 18:32:47     12s] <CMD> suppressMessage ENCEXT-2799
+[09/09 18:32:47     12s] <CMD> getVersion
+[09/09 18:32:47     12s] <CMD> getVersion
+[09/09 18:32:49     12s] <CMD> getVersion
+[09/09 18:32:53     12s] [INFO] Loading PVS 22.20 fill procedures
+[09/09 18:32:53     12s] <CMD> win
+[09/09 18:34:15     15s] <CMD> set init_verilog fir_4tap_shared_mult_synth.v
+[09/09 18:34:15     15s] <CMD> set init_top_cell fir_4tap_shared_mult
+[09/09 18:34:15     15s] <CMD> set init_lef_file {/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef}
+[09/09 18:34:15     15s] <CMD> set init_pwr_net VDD
+[09/09 18:34:15     15s] <CMD> set init_gnd_net VSS
+[09/09 18:34:15     15s] <CMD> set init_mmmc_file Default.view
+[09/09 18:34:15     15s] <CMD> init_design
+[09/09 18:34:15     15s] #% Begin Load MMMC data ... (date=09/09 18:34:15, mem=1010.7M)
+[09/09 18:34:15     15s] #% End Load MMMC data ... (date=09/09 18:34:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1011.5M, current mem=1011.5M)
+[09/09 18:34:15     15s] 
+[09/09 18:34:15     15s] Loading LEF file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ...
+[09/09 18:34:15     15s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[09/09 18:34:15     15s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[09/09 18:34:15     15s] 
+[09/09 18:37:15     20s] 
+[09/09 18:37:15     20s] *** Memory Usage v#1 (Current mem = 1072.859M, initial mem = 483.887M) ***
+[09/09 18:37:15     20s] 
+[09/09 18:37:15     20s] *** Summary of all messages that are not suppressed in this session:
+[09/09 18:37:15     20s] Severity  ID               Count  Summary                                  
+[09/09 18:37:15     20s] ERROR     IMPLF-3              1  Error found when processing LEF file '%s...
+[09/09 18:37:15     20s] ERROR     IMPLF-26             2  No technology information is defined in ...
+[09/09 18:37:15     20s] ERROR     IMPLF-224            1  Failed to create via '%s'.               
+[09/09 18:37:15     20s] ERROR     IMPLF-111            1  Layer '%s' is not defined                
+[09/09 18:37:15     20s] ERROR     IMPSYT-16013         1  Loading LEF file(s) failed, and has abor...
+[09/09 18:37:15     20s] *** Message Summary: 0 warning(s), 6 error(s)
+[09/09 18:37:15     20s] 
+[09/09 18:37:15     20s] --- Ending "Innovus" (totcpu=0:00:21.9, real=0:04:42, mem=1072.9M) ---

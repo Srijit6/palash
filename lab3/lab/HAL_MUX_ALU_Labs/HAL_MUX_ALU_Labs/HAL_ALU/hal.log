@@ -1,0 +1,124 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/cds.lib -logfile hal.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v.
+hal: Workspace: /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU.
+hal: Date: Wed Jul 29 11:59:06 IST 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.alu_good:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		alu_good
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+            default: y = 4'b0000; // Explicit default case satisfies strict style checks
+|
+halcheck: *W,MAXLEN (./rtl/alu_good.v,17|0): The HDL source line is 88 characters, which exceeds the recommended length of 80 characters.
+module alu_good (
+|
+halcheck: *N,PRTCNT (./rtl/alu_good.v,1|0): Module/Entity 'alu_good' contains '4' ports.
+halcheck: (./rtl/alu_good.v,1): Number of Input ports: 3.
+halcheck: (./rtl/alu_good.v,1): Number of Output ports: 1.
+    input  wire [3:0] a,
+|
+halcheck: *W,STYVAL (./rtl/alu_good.v,2|0): Numeric value '3' used for identifier 'a'. Use constants to avoid portability issues.
+    input  wire [3:0] b,
+|
+halcheck: *W,STYVAL (./rtl/alu_good.v,3|0): Numeric value '3' used for identifier 'b'. Use constants to avoid portability issues.
+    input  wire [1:0] op,
+|
+halcheck: *W,STYVAL (./rtl/alu_good.v,4|0): Numeric value '1' used for identifier 'op'. Use constants to avoid portability issues.
+    output reg  [3:0] y
+|
+halcheck: *W,STYVAL (./rtl/alu_good.v,5|0): Numeric value '3' used for identifier 'y'. Use constants to avoid portability issues.
+    always @(*) begin
+|
+halcheck: *W,NOBLKN (./rtl/alu_good.v,8|0): Each block should be labeled with a meaningful name.
+        case (op)
+|
+halcheck: *W,CDEFCV (./rtl/alu_good.v,12|0): The case items of the case statement in module/design-unit alu_good cover all the numerical values of the case expression. The default clause is not required.
+            2'b00: y = a + b;
+|
+halcheck: *W,POIASG (./rtl/alu_good.v,13|0): The result of addition operation may lead to a potential overflow in module/design-unit alu_good.
+halcheck: (./rtl/alu_good.v,13): LHS operand 'y' is 4 bit(s), RHS operand 'a + b' is 5 bit(s).
+halcheck: (./rtl/alu_good.v,13): Increase the size of LHS by 1 bit(s).
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 8.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+    output reg  [3:0] y
+|
+halsynth: *W,MULBAS (./rtl/alu_good.v,5|0): In module 'alu_good', register 'y' has multiple blocking assignments.
+        y = 4'b0000; 
+|
+halsynth: (./rtl/alu_good.v,10|0): Source HDL information for the error/warning mentioned above.
+            2'b00: y = a + b;
+|
+halsynth: (./rtl/alu_good.v,13|0): Source HDL information for the error/warning mentioned above.
+            2'b01: y = a - b;
+|
+halsynth: (./rtl/alu_good.v,14|0): Source HDL information for the error/warning mentioned above.
+            2'b10: y = a & b;
+|
+halsynth: (./rtl/alu_good.v,15|0): Source HDL information for the error/warning mentioned above.
+            2'b11: y = a | b;
+|
+halsynth: (./rtl/alu_good.v,16|0): Source HDL information for the error/warning mentioned above.
+            default: y = 4'b0000; // Explicit default case satisfies strict style checks
+|
+halsynth: (./rtl/alu_good.v,17|0): Source HDL information for the error/warning mentioned above.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+            2'b11: y = a | b;
+|
+halstruct: *W,TPOUNR (./rtl/alu_good.v,16|0): Output 'y' of top-level module is not a register.
+module alu_good (
+|
+halstruct: *W,IOCOMB (./rtl/alu_good.v,1|0): Combinational path detected between top-level input 'alu_good.a' and top-level output 'alu_good.y'.
+module alu_good (
+|
+halstruct: *W,IOCOMB (./rtl/alu_good.v,1|0): Combinational path detected between top-level input 'alu_good.b' and top-level output 'alu_good.y'.
+module alu_good (
+|
+halstruct: *N,NUMDFF (./rtl/alu_good.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 3.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (12)
+  CDEFCV (1)      IOCOMB (2)      MAXLEN (1)      MULBAS (1)     
+  NOBLKN (1)      POIASG (1)      STYVAL (4)      TPOUNR (1)     
+
+ Notes    : (2)
+  NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib ./INCA_libs/irun.nc/cds.lib -hdlvar ./INCA_libs/irun.nc/hdl.var -sortby severity -sortby category -sortby tag hal.log
+

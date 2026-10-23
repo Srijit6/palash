@@ -1,0 +1,425 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	-files scripts/02_run_fixed.tcl 
+Date:		Thu Oct 15 18:26:58 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[18:26:58.328690] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2708392_Vzirei'.
+#@ Processing -files option
+Sourcing tcl/tk file 'scripts/02_run_fixed.tcl' ...
+Scheduling  timing library file(s) '/home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib' to be loaded when the set_top_module command is issued
+Scheduling netlist file(s) '/home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/netlist/02_fixed.v' to be loaded when the set_top_module command is issued
+#% Begin Load MMMC data ... (date=10/15 18:27:15, mem=1153.3M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/15 18:27:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1154.6M, current mem=1154.6M)
+Loading view definition file from .ssv_emulate_view_definition_2708392.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib' ...
+**WARN: (TECHLIB-9108):	 'input_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'input_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'output_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'output_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_rise' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_fall' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_rise' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_fall' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 2)
+**ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_setup_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 147)
+**ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_hold_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 153)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 148)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 149)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 145)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 154)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 155)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/lib/teaching_sta_physical.lib, Line 151)
+Read 7 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=38.9M, fe_cpu=0.24min, fe_real=0.28min, fe_mem=1219.6M) ***
+#% Begin Load netlist data ... (date=10/15 18:27:15, mem=1161.9M)
+*** Begin netlist parsing (mem=1219.6M) ***
+Reading verilog netlist '/home/vlsi16/24bvd1023/lab10/ECO/LAB05_FALSE_PATH_EXCEPTION/netlist/02_fixed.v'
+
+*** Memory Usage v#1 (Current mem = 1344.684M, initial mem = 619.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1344.7M) ***
+#% End Load netlist data ... (date=10/15 18:27:15, total cpu=0:00:00.2, real=0:00:00.0, peak res=1232.4M, current mem=1228.4M)
+Set top cell to false_path_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell false_path_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 8 modules.
+** info: there are 22 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1692.129M, initial mem = 619.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:15.4, real=0:00:17.0, peak res=1831.9M, current mem=1831.9M)
+Total number of combinational cells: 5
+Total number of sequential cells: 2
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUF_X1 BUF_X2
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY_X1
+Total number of identified usable delay cells: 1
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Current (total cpu=0:00:15.6, real=0:00:18.0, peak res=1863.7M, current mem=1824.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1834.7M, current mem=1834.7M)
+Current (total cpu=0:00:15.6, real=0:00:18.0, peak res=1863.7M, current mem=1834.7M)
+
+==================================================================
+LAB05 FALSE-PATH EXCEPTION - AFTER JUSTIFIED EXCEPTION
+==================================================================
+Clock         : CLK period 5.00 ns, ideal
+Library       : CLK->Q = 0.20, setup = 0.20, hold = 0.10 ns
+Setup required: 5.00 - 0.20 = 4.80 ns     Hold required: 0.00 + 0.10 = 0.10 ns
+
+DATA path     : U_DATA_L -> 6 x BUF_X1 -> U_DATA_C/D
+  Arrival     : 0.20 + 6 x 0.50 = 3.20 ns
+  Setup slack : 4.80 - 3.20 = +1.60 ns -> MET
+  Hold slack  : 3.20 - 0.10 = +3.10 ns -> MET
+
+CFG path      : U_CFG_L -> 12 x BUF_X1 -> U_CFG_C/D
+  Arrival     : 0.20 + 12 x 0.50 = 6.20 ns
+  If timed    : setup -1.40 ns, hold +6.10 ns (arithmetic only)
+SDC correction: set_false_path -from [get_cells U_CFG_L] -to [get_pins U_CFG_C/D]
+Result        : CFG path is EXCLUDED from BOTH setup and hold analysis;
+                it does NOT gain positive slack (physical delay is unchanged).
+Expected      : worst setup/hold reports show only the DATA path; the explicit
+                CFG report should find no constrained path.
+==================================================================
+ACTUAL TEMPUS TIMING REPORTS FOLLOW
+==================================================================
+
+----- WORST SETUP paths (late) -----
+###############################################################
+#  Generated by:      Cadence Tempus 22.11-s001_1
+#  OS:                Linux x86_64(Host ID cad312vitcc.vit.ac.in)
+#  Generated on:      Thu Oct 15 18:27:16 2026
+#  Design:            false_path_top
+#  Command:           report_timing -late -path_type full_clock -max_paths 5
+###############################################################
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2121.48 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: false_path_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2139.48)
+End delay calculation. (MEM=2340.07 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2340.07 CPU=0:00:00.1 REAL=0:00:00.0)
+Path 1: MET Setup Check with Pin U_DATA_C/CLK 
+Endpoint:   U_DATA_C/D (v) checked with  leading edge of 'CLK'
+Beginpoint: U_DATA_L/Q (v) triggered by  leading edge of 'CLK'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
+- Setup                         0.200
++ Phase Shift                   5.000
+= Required Time                 4.800
+- Arrival Time                  3.200
+= Slack Time                    1.600
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      -----------------------------------------------------------
+      Instance  Arc           Cell       Delay  Arrival  Required  
+                                                Time     Time  
+      -----------------------------------------------------------
+      -         clk ^         -          -      0.000    1.600  
+      U_DATA_L  CLK ^ -> Q v  DFFPOS_X1  0.200  0.200    1.800  
+      b0        A v -> Y v    BUF_X1     0.500  0.700    2.300  
+      b1        A v -> Y v    BUF_X1     0.500  1.200    2.800  
+      b2        A v -> Y v    BUF_X1     0.500  1.700    3.300  
+      b3        A v -> Y v    BUF_X1     0.500  2.200    3.800  
+      b4        A v -> Y v    BUF_X1     0.500  2.700    4.300  
+      b5        A v -> Y v    BUF_X1     0.500  3.200    4.800  
+      U_DATA_C  D v           DFFPOS_X1  0.000  3.200    4.800  
+      -----------------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    -1.600  
+      U_DATA_C  CLK ^  DFFPOS_X1  0.000  0.000    -1.600  
+      ----------------------------------------------------
+Path 2: MET Setup Check with Pin U_DATA_L/CLK 
+Endpoint:   U_DATA_L/D (v) checked with  leading edge of 'CLK'
+Beginpoint: din        (v) triggered by  leading edge of '@'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
+- Setup                         0.200
++ Phase Shift                   5.000
+= Required Time                 4.800
+- Arrival Time                  0.000
+= Slack Time                    4.800
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         din v  -          -      0.000    4.800  
+      U_DATA_L  D v    DFFPOS_X1  0.000  0.000    4.800  
+      ----------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    -4.800  
+      U_DATA_L  CLK ^  DFFPOS_X1  0.000  0.000    -4.800  
+      ----------------------------------------------------
+Path 3: MET Setup Check with Pin U_CFG_L/CLK 
+Endpoint:   U_CFG_L/D (v) checked with  leading edge of 'CLK'
+Beginpoint: cfg       (v) triggered by  leading edge of '@'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
+- Setup                         0.200
++ Phase Shift                   5.000
+= Required Time                 4.800
+- Arrival Time                  0.000
+= Slack Time                    4.800
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         cfg v  -          -      0.000    4.800  
+      U_CFG_L   D v    DFFPOS_X1  0.000  0.000    4.800  
+      ----------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    -4.800  
+      U_CFG_L   CLK ^  DFFPOS_X1  0.000  0.000    -4.800  
+      ----------------------------------------------------
+
+
+----- WORST HOLD paths (early) -----
+###############################################################
+#  Generated by:      Cadence Tempus 22.11-s001_1
+#  OS:                Linux x86_64(Host ID cad312vitcc.vit.ac.in)
+#  Generated on:      Thu Oct 15 18:27:16 2026
+#  Design:            false_path_top
+#  Command:           report_timing -early -path_type full_clock -max_paths 5
+###############################################################
+Path 1: VIOLATED Hold Check with Pin U_DATA_L/CLK 
+Endpoint:   U_DATA_L/D (v) checked with  leading edge of 'CLK'
+Beginpoint: din        (v) triggered by  leading edge of '@'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
++ Hold                          0.100
++ Phase Shift                   0.000
+= Required Time                 0.100
+  Arrival Time                  0.000
+  Slack Time                   -0.100
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         din v  -          -      0.000    0.100  
+      U_DATA_L  D v    DFFPOS_X1  0.000  0.000    0.100  
+      ----------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    -0.100  
+      U_DATA_L  CLK ^  DFFPOS_X1  0.000  0.000    -0.100  
+      ----------------------------------------------------
+Path 2: VIOLATED Hold Check with Pin U_CFG_L/CLK 
+Endpoint:   U_CFG_L/D (v) checked with  leading edge of 'CLK'
+Beginpoint: cfg       (v) triggered by  leading edge of '@'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
++ Hold                          0.100
++ Phase Shift                   0.000
+= Required Time                 0.100
+  Arrival Time                  0.000
+  Slack Time                   -0.100
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         cfg v  -          -      0.000    0.100  
+      U_CFG_L   D v    DFFPOS_X1  0.000  0.000    0.100  
+      ----------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    -0.100  
+      U_CFG_L   CLK ^  DFFPOS_X1  0.000  0.000    -0.100  
+      ----------------------------------------------------
+Path 3: MET Hold Check with Pin U_DATA_C/CLK 
+Endpoint:   U_DATA_C/D (v) checked with  leading edge of 'CLK'
+Beginpoint: U_DATA_L/Q (v) triggered by  leading edge of 'CLK'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
++ Hold                          0.100
++ Phase Shift                   0.000
+= Required Time                 0.100
+  Arrival Time                  3.200
+  Slack Time                    3.100
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      -----------------------------------------------------------
+      Instance  Arc           Cell       Delay  Arrival  Required  
+                                                Time     Time  
+      -----------------------------------------------------------
+      -         clk ^         -          -      0.000    -3.100  
+      U_DATA_L  CLK ^ -> Q v  DFFPOS_X1  0.200  0.200    -2.900  
+      b0        A v -> Y v    BUF_X1     0.500  0.700    -2.400  
+      b1        A v -> Y v    BUF_X1     0.500  1.200    -1.900  
+      b2        A v -> Y v    BUF_X1     0.500  1.700    -1.400  
+      b3        A v -> Y v    BUF_X1     0.500  2.200    -0.900  
+      b4        A v -> Y v    BUF_X1     0.500  2.700    -0.400  
+      b5        A v -> Y v    BUF_X1     0.500  3.200    0.100  
+      U_DATA_C  D v           DFFPOS_X1  0.000  3.200    0.100  
+      -----------------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      ----------------------------------------------------
+      Instance  Arc    Cell       Delay  Arrival  Required  
+                                         Time     Time  
+      ----------------------------------------------------
+      -         clk ^  -          -      0.000    3.100  
+      U_DATA_C  CLK ^  DFFPOS_X1  0.000  0.000    3.100  
+      ----------------------------------------------------
+
+
+----- CFG path after set_false_path (expect: no constrained path) -----
+###############################################################
+#  Generated by:      Cadence Tempus 22.11-s001_1
+#  OS:                Linux x86_64(Host ID cad312vitcc.vit.ac.in)
+#  Generated on:      Thu Oct 15 18:27:16 2026
+#  Design:            false_path_top
+#  Command:           report_timing -late -path_type full_clock -from [get_pins U_CFG_L/CLK] -to [get_pins U_CFG_C/D] -max_paths 1
+###############################################################
+No constrained timing paths with given description found.
+Paths may be unconstrained (try '-unconstrained' option) or  may not exist.
+
+
+*** Memory Usage v#1 (Current mem = 2274.066M, initial mem = 619.465M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     TECHLIB-1186         4  The '%s' table found for timing group wi...
+ERROR     TECHLIB-1204         2  Illegal value '%s' defined for attribute...
+ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+WARNING   TECHLIB-9108         8   '%s' not specified in the library, usin...
+*** Message Summary: 8 warning(s), 8 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:00:16.4, real=0:00:18.0, mem=2274.1M) ---
+

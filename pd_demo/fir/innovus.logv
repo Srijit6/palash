@@ -1,0 +1,435 @@
+[08/21 12:17:14      0s] 
+[08/21 12:17:14      0s] Cadence Innovus(TM) Implementation System.
+[08/21 12:17:14      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/21 12:17:14      0s] 
+[08/21 12:17:14      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[08/21 12:17:14      0s] Options:	
+[08/21 12:17:14      0s] Date:		Fri Aug 21 12:17:14 2026
+[08/21 12:17:14      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[08/21 12:17:14      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[08/21 12:17:14      0s] 
+[08/21 12:17:14      0s] License:
+[08/21 12:17:14      0s] 		[12:17:14.339330] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+[08/21 12:17:14      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[08/21 12:17:15      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[08/21 12:17:24      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[08/21 12:17:26     10s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[08/21 12:17:26     10s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[08/21 12:17:26     10s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[08/21 12:17:26     10s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[08/21 12:17:26     10s] @(#)CDS: CPE v21.15-s076
+[08/21 12:17:26     10s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[08/21 12:17:26     10s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[08/21 12:17:26     10s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[08/21 12:17:26     10s] @(#)CDS: RCDB 11.15.0
+[08/21 12:17:26     10s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[08/21 12:17:26     10s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[08/21 12:17:26     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1034435_cad312vitcc.vit.ac.in_vlsi16_2KCFl5.
+
+[08/21 12:17:26     10s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[08/21 12:17:27     12s] 
+[08/21 12:17:27     12s] **INFO:  MMMC transition support version v31-84 
+[08/21 12:17:27     12s] 
+[08/21 12:17:27     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[08/21 12:17:27     12s] <CMD> suppressMessage ENCEXT-2799
+[08/21 12:17:27     12s] <CMD> getVersion
+[08/21 12:17:27     12s] <CMD> getVersion
+[08/21 12:17:27     12s] <CMD> getVersion
+[08/21 12:17:27     12s] [INFO] Loading PVS 22.20 fill procedures
+[08/21 12:17:28     12s] <CMD> win
+[08/21 12:58:13    727s] <CMD> set init_design_settop 0
+[08/21 12:58:13    727s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[08/21 12:58:13    727s] <CMD> set init_mmmc_file Default.view
+[08/21 12:58:13    727s] <CMD> init_design
+[08/21 12:58:13    727s] #% Begin Load MMMC data ... (date=08/21 12:58:13, mem=1072.2M)
+[08/21 12:58:13    728s] #% End Load MMMC data ... (date=08/21 12:58:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1072.6M, current mem=1072.6M)
+[08/21 12:58:13    728s] **WARN: (IMPSYT-10026):	No LEF physical data was provided but timing libraries were given, so only timing analysis can be run. Any commands that require physical data will fail. This mode is meant for doing Tempus vs Innovus comparisons using common scripts, and is not intended for normal usage.
+[08/21 12:58:13    728s] Use timer mode.
+[08/21 12:58:13    728s] Loading view definition file from Default.view
+[08/21 12:58:13    728s] Reading max_time timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[08/21 12:58:13    728s] Read 479 cells in library 'slow' 
+[08/21 12:58:13    728s] Reading min_time timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[08/21 12:58:13    728s] Read 479 cells in library 'fast' 
+[08/21 12:58:13    728s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:00.0, peak res=1140.5M, current mem=1084.1M)
+[08/21 12:58:13    728s] *** End library_loading (cpu=0.01min, real=0.00min, mem=29.0M, fe_cpu=12.14min, fe_real=40.98min, fe_mem=1159.9M) ***
+[08/21 12:58:13    728s] #% Begin Load netlist data ... (date=08/21 12:58:13, mem=1084.1M)
+[08/21 12:58:13    728s] *** Begin netlist parsing (mem=1159.9M) ***
+[08/21 12:58:13    728s] Created 479 new cells from 2 timing libraries.
+[08/21 12:58:13    728s] Reading netlist ...
+[08/21 12:58:13    728s] Backslashed names will retain backslash and a trailing blank character.
+[08/21 12:58:13    728s] Reading verilog netlist 'output/netlist/fir_4tap_opt.v'
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] *** Memory Usage v#1 (Current mem = 1161.855M, initial mem = 483.887M) ***
+[08/21 12:58:13    728s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1161.9M) ***
+[08/21 12:58:13    728s] #% End Load netlist data ... (date=08/21 12:58:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1101.7M, current mem=1101.7M)
+[08/21 12:58:13    728s] Top level cell is fir_4tap.
+[08/21 12:58:13    728s] Hooked 958 DB cells to tlib cells.
+[08/21 12:58:13    728s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1109.1M, current mem=1109.1M)
+[08/21 12:58:13    728s] Starting recursive module instantiation check.
+[08/21 12:58:13    728s] No recursion found.
+[08/21 12:58:13    728s] Building hierarchical netlist for Cell fir_4tap ...
+[08/21 12:58:13    728s] *** Netlist is unique.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[4]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[8]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[10]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[3]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[7]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[11]  of the cell DFFRHQX8 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[2]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[1]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[9]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[6]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[0]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \yout_reg[5]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x3_reg[0]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x3_reg[1]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x3_reg[6]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x2_reg[0]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x2_reg[7]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x2_reg[2]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x1_reg[5]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-102):	Instance \x1_reg[4]  of the cell DFFRHQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[08/21 12:58:13    728s] **WARN: (EMS-27):	Message (IMPREPO-102) has exceeded the current message display limit of 20.
+[08/21 12:58:13    728s] To increase the message display limit, refer to the product command reference manual.
+[08/21 12:58:13    728s] ** info: there are 959 modules.
+[08/21 12:58:13    728s] ** info: there are 83 stdCell insts.
+[08/21 12:58:13    728s] **ERROR: (IMPREPO-103):	There are 83 instances (16 cells) with no dimension defined.
+
+[08/21 12:58:13    728s] *** Memory Usage v#1 (Current mem = 1215.270M, initial mem = 483.887M) ***
+[08/21 12:58:13    728s] Extraction setup Started 
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] 
+[08/21 12:58:13    728s] Trim Metal Layers:
+[08/21 12:58:13    728s] Summary of Active RC-Corners : 
+[08/21 12:58:13    728s]  
+[08/21 12:58:13    728s]  Analysis View: setup_new
+[08/21 12:58:13    728s]     RC-Corner Name        : default_rc_corner
+[08/21 12:58:13    728s]     RC-Corner Index       : 0
+[08/21 12:58:13    728s]     RC-Corner Temperature : 25 Celsius
+[08/21 12:58:13    728s]     RC-Corner Cap Table   : ''
+[08/21 12:58:13    728s]     RC-Corner PreRoute Res Factor         : 1
+[08/21 12:58:13    728s]     RC-Corner PreRoute Cap Factor         : 1
+[08/21 12:58:13    728s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[08/21 12:58:13    728s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/21 12:58:13    728s]  
+[08/21 12:58:13    728s]  Analysis View: hold_view
+[08/21 12:58:13    728s]     RC-Corner Name        : default_rc_corner
+[08/21 12:58:13    728s]     RC-Corner Index       : 0
+[08/21 12:58:13    728s]     RC-Corner Temperature : 25 Celsius
+[08/21 12:58:13    728s]     RC-Corner Cap Table   : ''
+[08/21 12:58:13    728s]     RC-Corner PreRoute Res Factor         : 1
+[08/21 12:58:13    728s]     RC-Corner PreRoute Cap Factor         : 1
+[08/21 12:58:13    728s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/21 12:58:13    728s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[08/21 12:58:13    728s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[08/21 12:58:13    728s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/21 12:58:13    728s] *Info: initialize multi-corner CTS.
+[08/21 12:58:13    728s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1366.7M, current mem=1128.9M)
+[08/21 12:58:14    728s] Reading timing constraints file 'output/constrints/fir_4tap_synth.sdc' ...
+[08/21 12:58:14    729s] Current (total cpu=0:12:09, real=0:41:00, peak res=1385.2M, current mem=1385.2M)
+[08/21 12:58:14    729s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File output/constrints/fir_4tap_synth.sdc, Line 9).
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File output/constrints/fir_4tap_synth.sdc, Line 10).
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] INFO (CTE): Reading of timing constraints file output/constrints/fir_4tap_synth.sdc completed, with 2 WARNING
+[08/21 12:58:14    729s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1427.4M, current mem=1427.4M)
+[08/21 12:58:14    729s] Current (total cpu=0:12:09, real=0:41:00, peak res=1427.4M, current mem=1427.4M)
+[08/21 12:58:14    729s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[08/21 12:58:14    729s] Summary for sequential cells identification: 
+[08/21 12:58:14    729s]   Identified SBFF number: 0
+[08/21 12:58:14    729s]   Identified MBFF number: 0
+[08/21 12:58:14    729s]   Identified SB Latch number: 0
+[08/21 12:58:14    729s]   Identified MB Latch number: 0
+[08/21 12:58:14    729s]   Not identified SBFF number: 0
+[08/21 12:58:14    729s]   Not identified MBFF number: 0
+[08/21 12:58:14    729s]   Not identified SB Latch number: 0
+[08/21 12:58:14    729s]   Not identified MB Latch number: 0
+[08/21 12:58:14    729s]   Number of sequential cells which are not FFs: 0
+[08/21 12:58:14    729s] Total number of combinational cells: 0
+[08/21 12:58:14    729s] Total number of sequential cells: 0
+[08/21 12:58:14    729s] Total number of tristate cells: 0
+[08/21 12:58:14    729s] Total number of level shifter cells: 0
+[08/21 12:58:14    729s] Total number of power gating cells: 0
+[08/21 12:58:14    729s] Total number of isolation cells: 0
+[08/21 12:58:14    729s] Total number of power switch cells: 0
+[08/21 12:58:14    729s] Total number of pulse generator cells: 0
+[08/21 12:58:14    729s] Total number of always on buffers: 0
+[08/21 12:58:14    729s] Total number of retention cells: 0
+[08/21 12:58:14    729s] List of usable buffers:
+[08/21 12:58:14    729s] Total number of usable buffers: 0
+[08/21 12:58:14    729s] List of unusable buffers:
+[08/21 12:58:14    729s] Total number of unusable buffers: 0
+[08/21 12:58:14    729s] List of usable inverters:
+[08/21 12:58:14    729s] Total number of usable inverters: 0
+[08/21 12:58:14    729s] List of unusable inverters:
+[08/21 12:58:14    729s] Total number of unusable inverters: 0
+[08/21 12:58:14    729s] List of identified usable delay cells:
+[08/21 12:58:14    729s] Total number of identified usable delay cells: 0
+[08/21 12:58:14    729s] List of identified unusable delay cells:
+[08/21 12:58:14    729s] Total number of identified unusable delay cells: 0
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[08/21 12:58:14    729s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Deleting Cell Server Begin ...
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Deleting Cell Server End ...
+[08/21 12:58:14    729s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1428.4M, current mem=1428.4M)
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[08/21 12:58:14    729s] Summary for sequential cells identification: 
+[08/21 12:58:14    729s]   Identified SBFF number: 0
+[08/21 12:58:14    729s]   Identified MBFF number: 0
+[08/21 12:58:14    729s]   Identified SB Latch number: 0
+[08/21 12:58:14    729s]   Identified MB Latch number: 0
+[08/21 12:58:14    729s]   Not identified SBFF number: 0
+[08/21 12:58:14    729s]   Not identified MBFF number: 0
+[08/21 12:58:14    729s]   Not identified SB Latch number: 0
+[08/21 12:58:14    729s]   Not identified MB Latch number: 0
+[08/21 12:58:14    729s]   Number of sequential cells which are not FFs: 0
+[08/21 12:58:14    729s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[08/21 12:58:14    729s] Type 'man IMPOPT-3000' for more detail.
+[08/21 12:58:14    729s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[08/21 12:58:14    729s] Type 'man IMPOPT-3001' for more detail.
+[08/21 12:58:14    729s]  Visiting view : setup_new
+[08/21 12:58:14    729s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[08/21 12:58:14    729s]    : PowerDomain = none : no stdDelay from this view
+[08/21 12:58:14    729s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/21 12:58:14    729s]  Visiting view : hold_view
+[08/21 12:58:14    729s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[08/21 12:58:14    729s]    : PowerDomain = none : no stdDelay from this view
+[08/21 12:58:14    729s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/21 12:58:14    729s] *INFO : stdDelay is calculated as zero; using legacy method.
+[08/21 12:58:14    729s] *INFO : stdSlew is calculated as zero; using legacy method.
+[08/21 12:58:14    729s] TLC MultiMap info (StdDelay):
+[08/21 12:58:14    729s]   : min_delay + min_time + 1 + no RcCorner := -9.22337e+17ps
+[08/21 12:58:14    729s]   : min_delay + min_time + 1 + default_rc_corner := -9.22337e+17ps
+[08/21 12:58:14    729s]   : max_delay + max_time + 1 + no RcCorner := -9.22337e+17ps
+[08/21 12:58:14    729s]   : max_delay + max_time + 1 + default_rc_corner := -9.22337e+17ps
+[08/21 12:58:14    729s]  Setting StdDelay to: 10ps
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Deleting Cell Server Begin ...
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] TimeStamp Deleting Cell Server End ...
+[08/21 12:58:14    729s] 
+[08/21 12:58:14    729s] *** Summary of all messages that are not suppressed in this session:
+[08/21 12:58:14    729s] Severity  ID               Count  Summary                                  
+[08/21 12:58:14    729s] WARNING   IMPSYT-10026         1  No LEF physical data was provided but ti...
+[08/21 12:58:14    729s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[08/21 12:58:14    729s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[08/21 12:58:14    729s] ERROR     IMPREPO-102         83  Instance %s of the cell %s has no physic...
+[08/21 12:58:14    729s] ERROR     IMPREPO-103          1  There are %d instances (%d cells) with n...
+[08/21 12:58:14    729s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[08/21 12:58:14    729s] *** Message Summary: 5 warning(s), 84 error(s)
+[08/21 12:58:14    729s] 
+[08/21 13:01:06    735s] **ERROR: (IMPQTF-4044):	Error occurs when '::Rda_FloorPlan::SpecFPlan::setMarginControl' is executed with the error message: 'missing operand at _@_
+in expression " - _@_"'. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+**ERROR: (IMPQTF-4044):	Error occurs when '::Rda_FloorPlan::SpecFPlan::setMarginControl' is executed with the error message: 'missing operand at _@_
+in expression " - _@_"'. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+<CMD> setBottomIoPadOrient {}
+[08/21 13:01:52    737s] **WARN: (IMPSYC-811):	Undefined side  for global IoPad PinSide
+[08/21 13:01:52    737s] **ERROR: (IMPQTF-4044):	Error occurs when '::Rda_FloorPlan::SpecFPlan::apply  apply' is executed with the error message: ''. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+<CMD> setBottomIoPadOrient {}
+[08/21 13:01:53    737s] **WARN: (IMPSYC-811):	Undefined side  for global IoPad PinSide
+[08/21 13:02:00    737s] <CMD> setBottomIoPadOrient {}
+[08/21 13:02:00    737s] **WARN: (IMPSYC-811):	Undefined side  for global IoPad PinSide
+[08/21 13:02:08    737s] <CMD> fit
+[08/21 13:02:09    737s] <CMD> fit
+[08/21 13:02:10    737s] <CMD> fit
+[08/21 13:02:22    738s] <CMD> zoomOut
+[08/21 13:02:22    738s] <CMD> zoomOut
+[08/21 13:02:22    738s] <CMD> zoomOut
+[08/21 13:02:22    738s] <CMD> zoomOut
+[08/21 13:02:22    738s] <CMD> zoomOut
+[08/21 13:02:23    738s] <CMD> zoomOut
+[08/21 13:02:23    738s] <CMD> zoomOut
+[08/21 13:02:23    738s] <CMD> zoomOut
+[08/21 13:02:23    738s] <CMD> zoomOut
+[08/21 13:02:23    738s] <CMD> zoomOut
+[08/21 13:04:30    743s] <CMD> setBottomIoPadOrient {}
+[08/21 13:04:30    743s] **WARN: (IMPSYC-811):	Undefined side  for global IoPad PinSide
+[08/21 13:04:30    743s] **ERROR: (IMPQTF-4044):	Error occurs when '::Rda_FloorPlan::SpecFPlan::apply  apply' is executed with the error message: ''. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+<CMD> setBottomIoPadOrient {}
+[08/21 13:04:33    743s] **WARN: (IMPSYC-811):	Undefined side  for global IoPad PinSide
+[08/21 13:05:33    767s] <CMD> set init_gnd_net VSS
+[08/21 13:05:33    767s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:05:33    767s] <CMD> set init_pwr_net VDD
+[08/21 13:05:33    767s] <CMD> init_design
+[08/21 13:05:37    770s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:05:37    770s] 
+[08/21 13:05:53    772s] <CMD> set init_gnd_net VSS
+[08/21 13:05:53    772s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:05:53    772s] <CMD> set init_pwr_net VDD
+[08/21 13:05:53    772s] <CMD> init_design
+[08/21 13:05:58    776s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:05:58    776s] 
+[08/21 13:06:01    776s] <CMD> set init_gnd_net VSS
+[08/21 13:06:01    776s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:06:01    776s] <CMD> set init_design_settop 0
+[08/21 13:06:01    776s] <CMD> set init_pwr_net VDD
+[08/21 13:06:01    776s] <CMD> init_design
+[08/21 13:06:07    781s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:06:07    781s] 
+[08/21 13:06:13    785s] <CMD> save_global fir_4tap.globals
+[08/21 13:06:15    785s] <CMD> set init_gnd_net VSS
+[08/21 13:06:15    785s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:06:15    785s] <CMD> set init_design_settop 0
+[08/21 13:06:15    785s] <CMD> set init_pwr_net VDD
+[08/21 13:06:15    785s] <CMD> init_design
+[08/21 13:06:16    786s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:06:16    786s] 
+[08/21 13:06:21    788s] <CMD> set init_gnd_net VSS
+[08/21 13:06:21    788s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:06:21    788s] <CMD> set init_design_settop 0
+[08/21 13:06:21    788s] <CMD> set init_pwr_net VDD
+[08/21 13:06:21    788s] <CMD> init_design
+[08/21 13:07:50    859s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:07:50    859s] 
+[08/21 13:08:28    860s] **ERROR: (IMPSYT-6000):	No Object Selected.
+[08/21 13:08:31    862s] <CMD> fit
+[08/21 13:08:31    862s] <CMD> fit
+[08/21 13:08:32    862s] <CMD> fit
+[08/21 13:08:32    862s] <CMD> fit
+[08/21 13:10:17    870s] <CMD> save_global fir_4tap.globals
+[08/21 13:10:18    870s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:10:18    870s] <CMD> init_design
+[08/21 13:10:20    871s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:10:20    871s] 
+[08/21 13:11:17    873s] <CMD> deleteSelectedFromFPlan
+[08/21 13:11:18    873s] <CMD> deleteSelectedFromFPlan
+[08/21 13:11:18    873s] <CMD> deleteSelectedFromFPlan
+[08/21 13:12:47    902s] <CMD> save_global fir_4tap.globals
+[08/21 13:12:49    902s] <CMD> set init_gnd_net VSS
+[08/21 13:12:49    902s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[08/21 13:12:49    902s] <CMD> set init_pwr_net VDD
+[08/21 13:12:49    902s] <CMD> init_design
+[08/21 13:12:51    904s] **ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[08/21 13:12:51    904s] 
+[08/21 13:13:04    905s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Aug 21 13:13:04 2026
+  Total CPU time:     0:15:06
+  Total real time:    0:55:52
+  Peak memory (main): 1451.51MB
+
+[08/21 13:13:04    905s] 
+[08/21 13:13:04    905s] *** Memory Usage v#1 (Current mem = 1529.723M, initial mem = 483.887M) ***
+[08/21 13:13:04    905s] 
+[08/21 13:13:04    905s] *** Summary of all messages that are not suppressed in this session:
+[08/21 13:13:04    905s] Severity  ID               Count  Summary                                  
+[08/21 13:13:04    905s] ERROR     IMPSYT-7329          7  Cannot load design with init_design, aft...
+[08/21 13:13:04    905s] WARNING   IMPSYT-10026         1  No LEF physical data was provided but ti...
+[08/21 13:13:04    905s] ERROR     IMPSYT-6000          2  No Object Selected.                      
+[08/21 13:13:04    905s] WARNING   IMPSYC-811           5  Undefined side %s for global IoPad PinSi...
+[08/21 13:13:04    905s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[08/21 13:13:04    905s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[08/21 13:13:04    905s] ERROR     IMPREPO-102         83  Instance %s of the cell %s has no physic...
+[08/21 13:13:04    905s] ERROR     IMPREPO-103          1  There are %d instances (%d cells) with n...
+[08/21 13:13:04    905s] ERROR     IMPQTF-4044          4  Error occurs when '%s' is executed with ...
+[08/21 13:13:04    905s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[08/21 13:13:04    905s] *** Message Summary: 10 warning(s), 97 error(s)
+[08/21 13:13:04    905s] 
+[08/21 13:13:04    905s] --- Ending "Innovus" (totcpu=0:15:06, real=0:55:50, mem=1529.7M) ---

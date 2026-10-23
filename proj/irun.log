@@ -1,0 +1,61 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Sep 08, 2026 at 18:13:34 IST
+irun
+	-s
+	+gui
+	+linedebug
+	+access+rwc
+	-timescale 1ns/1ps
+	/home/vlsi16/24bvd1023/proj/intel_4004_datapath.v
+	/home/vlsi16/24bvd1023/proj/intel_4004_fsm.v
+	/home/vlsi16/24bvd1023/proj/intel_4004_top.v
+	/home/vlsi16/24bvd1023/proj/tb_intel_4004.v
+irun: *W,BADPRF: The linedebug option may have an adverse performance impact.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_intel_4004
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Resolved nets:           0       1
+		Registers:              24      24
+		Scalar wires:            5       -
+		Vectored wires:          6       -
+		Always blocks:           8       8
+		Initial blocks:          3       3
+		Cont. assignments:       2       2
+		Pseudo assignments:      2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_intel_4004:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_intel_4004.uut.control_inst.current_state tb_intel_4004.uut.control_inst.cycle_state
+Created probe 1
+ncsim> run
+========================================
+SUCCESS: 50 Sequential Operations Completed.
+ADD and SUB logic heavily exercised.
+Terminating simulation for Coverage Report.
+========================================
+Simulation complete via $finish(1) at time 4005 NS + 0
+./tb_intel_4004.v:97             $finish;
+ncsim> probe -create -shm tb_intel_4004.uut.control_inst.next_state
+Created probe 2
+ncsim> run
+ncsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+ncsim> stop -create -object tb_intel_4004.uut.control_inst.next_state -name tb_intel_4004.uut.control_inst.next_state
+Created stop tb_intel_4004.uut.control_inst.next_state
+ncsim> stop -create -object tb_intel_4004.uut.control_inst.current_state -name tb_intel_4004.uut.control_inst.current_state
+Created stop tb_intel_4004.uut.control_inst.current_state
+ncsim> ^C
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Sep 08, 2026 at 18:20:55 IST  (total: 00:07:21)

@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(29Jul2026:12:03:29):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s2::(29Jul2026:12:12:12):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s3::(29Jul2026:12:13:40):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s4::(29Jul2026:12:20:42):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s5::(29Jul2026:12:25:23):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s6::(29Jul2026:12:31:37):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )
+s7::(29Jul2026:12:41:11):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v )

@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-access
++rwc
+../RTL/activity_power_top.v
+../TB/tb_data_high.v

@@ -1,0 +1,52 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:00:58.339378] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files compare_synthesis.tcl 
+Date:    Wed Sep 09 18:00:58 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     332886
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+
+[18:00:58.506472] Periodic Lic check successful
+[18:00:58.506481] Feature usage summary:
+[18:00:58.506481] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source compare_synthesis.tcl
+#@ Begin verbose source ./compare_synthesis.tcl
+@file(compare_synthesis.tcl) 33: set_db init_lib_search_path { /path/to/your/tech/lib }
+  Setting attribute of root '/': 'init_lib_search_path' =  /path/to/your/tech/lib 
+@file(compare_synthesis.tcl) 34: set_db library { your_tech_lib.lib }
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file 'your_tech_lib.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File 'your_tech_lib.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value ' your_tech_lib.lib ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./compare_synthesis.tcl
+1
+Encountered problems processing file: compare_synthesis.tcl
+WARNING: This version of the tool is 1537 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 169s, ST: 6s, FG: 6s, CPU: 1.6%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.7, cpu: 64, total: 2014.9G, free: 1896.7G}
+Abnormal exit.

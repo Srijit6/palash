@@ -1,0 +1,187 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	-files SCRIPTS/01_setup_fail.tcl 
+Date:		Fri Sep 18 12:16:50 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[12:16:50.328570] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_1864355_2qLMY5'.
+#@ Processing -files option
+Sourcing tcl/tk file 'SCRIPTS/01_setup_fail.tcl' ...
+<CMD> read_lib ./LIB/teaching_sta.lib
+<CMD> read_verilog ./NETLIST/setup_hold.v
+<CMD> set_top_module setup_hold_top
+#% Begin Load MMMC data ... (date=09/18 12:17:05, mem=1225.3M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=09/18 12:17:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1226.3M, current mem=1225.3M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_1864355.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi16/24bvd1023/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=39.0M, fe_cpu=0.22min, fe_real=0.25min, fe_mem=1334.6M) ***
+#% Begin Load netlist data ... (date=09/18 12:17:05, mem=1235.1M)
+*** Begin netlist parsing (mem=1334.6M) ***
+Reading verilog netlist './NETLIST/setup_hold.v'
+
+*** Memory Usage v#1 (Current mem = 1459.695M, initial mem = 626.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1459.7M) ***
+#% End Load netlist data ... (date=09/18 12:17:05, total cpu=0:00:00.2, real=0:00:00.0, peak res=1305.5M, current mem=1301.5M)
+Set top cell to setup_hold_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell setup_hold_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1808.141M, initial mem = 626.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:13.8, real=0:00:16.0, peak res=1904.1M, current mem=1904.1M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc ./SDC/01_setup_fail.sdc
+Current (total cpu=0:00:14.0, real=0:00:16.0, peak res=1936.0M, current mem=1896.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1897.6M, current mem=1897.6M)
+Current (total cpu=0:00:14.0, real=0:00:16.0, peak res=1936.0M, current mem=1897.6M)
+<CMD> report_timing -late -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2234.04 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: setup_hold_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2252.04)
+/dev/null
+End delay calculation. (MEM=2458.62 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2458.62 CPU=0:00:00.1 REAL=0:00:00.0)
+Path 1: VIOLATED Setup Check with Pin U_CAPTURE/CLK 
+Endpoint:   U_CAPTURE/D (v) checked with  leading edge of 'CLK'
+Beginpoint: U_LAUNCH/Q  (v) triggered by  leading edge of 'CLK'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
+- Setup                         0.200
++ Phase Shift                   4.000
+= Required Time                 3.800
+- Arrival Time                  4.200
+= Slack Time                   -0.400
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Ideal) 0.000
+     = Beginpoint Arrival Time       0.000
+      ------------------------------------------------------------
+      Instance   Arc           Cell       Delay  Arrival  Required  
+                                                 Time     Time  
+      ------------------------------------------------------------
+      U_LAUNCH   CLK ^         -          -      0.000    -0.400  
+      U_LAUNCH   CLK ^ -> Q v  DFFPOS_X1  0.200  0.200    -0.200  
+      u_d0       A v -> Y v    BUF_X1     0.500  0.700    0.300  
+      u_d1       A v -> Y v    BUF_X1     0.500  1.200    0.800  
+      u_d2       A v -> Y v    BUF_X1     0.500  1.700    1.300  
+      u_d3       A v -> Y v    BUF_X1     0.500  2.200    1.800  
+      u_d4       A v -> Y v    BUF_X1     0.500  2.700    2.300  
+      u_d5       A v -> Y v    BUF_X1     0.500  3.200    2.800  
+      u_d6       A v -> Y v    BUF_X1     0.500  3.700    3.300  
+      u_d7       A v -> Y v    BUF_X1     0.500  4.200    3.800  
+      U_CAPTURE  D v           DFFPOS_X1  0.000  4.200    3.800  
+      ------------------------------------------------------------
+
+<CMD> report_timing -late -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1 > ./REPORTS/01_setup_fail_setup.rpt
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 2392.625M, initial mem = 626.465M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:00:25.2, real=0:05:29, mem=2392.6M) ---

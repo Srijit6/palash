@@ -1,0 +1,90 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/cds.lib -logfile hal.log /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v.
+hal: Workspace: /home/vlsi16/24bvd1023/lab3/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl.
+hal: Date: Wed Jul 29 12:41:05 IST 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.alu_good:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		alu_good
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+    // FIX for Images 1 & 2: Replaced hardcoded [3:0] and [1:0] with parameters to resolve the 4 STYVAL warnings.
+|
+halcheck: *W,MAXLEN (./alu_good.v,2|0): The HDL source line is 113 characters, which exceeds the recommended length of 80 characters.
+            // FIX for Image 4 (Line 23): Moved comment to a new line to resolve MAXLEN warning (84 chars > 80 limit)
+|
+halcheck: *W,MAXLEN (./alu_good.v,27|0): The HDL source line is 117 characters, which exceeds the recommended length of 80 characters.
+            // FIX for Image 4 (Line 26): Moved comment to a new line to resolve MAXLEN warning (86 chars > 80 limit)
+|
+halcheck: *W,MAXLEN (./alu_good.v,34|0): The HDL source line is 117 characters, which exceeds the recommended length of 80 characters.
+module alu_good #(
+|
+halcheck: *N,PRTCNT (./alu_good.v,1|0): Module/Entity 'alu_good' contains '6' ports.
+halcheck: (./alu_good.v,1): Number of Input ports: 5.
+halcheck: (./alu_good.v,1): Number of Output ports: 1.
+    parameter DATA_WIDTH = 4,
+|
+halcheck: *W,PRMVAL (./alu_good.v,3|0): Bit width not specified for parameter 'DATA_WIDTH'.
+    parameter OP_WIDTH = 2
+|
+halcheck: *W,PRMVAL (./alu_good.v,4|0): Bit width not specified for parameter 'OP_WIDTH'.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 5.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+            default: y <= a | b;       
+|
+halstruct: *N,FFASRT (./alu_good.v,36|0): Flip-flop 'y' has an asynchronous reset 'rst_n'.
+    input wire clk,
+|
+halstruct: *N,CLKINF (./alu_good.v,6|0): Signal 'alu_good.clk' was inferred as clock.
+halstruct: (./alu_good.v,6): Clock source is signal 'alu_good.clk'.
+halstruct: (./alu_good.v,36): Drives the flip-flop 'alu_good.y'.
+module alu_good #(
+|
+halstruct: *N,NUMDFF (./alu_good.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 4.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (5)
+  MAXLEN (3)      PRMVAL (2)     
+
+ Notes    : (4)
+  CLKINF (1)      FFASRT (1)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib ./INCA_libs/irun.nc/cds.lib -hdlvar ./INCA_libs/irun.nc/hdl.var -sortby severity -sortby category -sortby tag hal.log
+

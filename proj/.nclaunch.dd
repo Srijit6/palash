@@ -1,0 +1,44 @@
+# DO NOT EDIT -- automatically generated design data file -- DO NOT EDIT!!!
+list \
+workdir {/home/vlsi16/24bvd1023/proj} \
+cdslib {} \
+worklib {} \
+mode {1} \
+filters {*.v} \
+sesslist {{value {@image22 intel_4004_datapath.v}} /home/vlsi16/24bvd1023/proj/intel_4004_datapath.v intel_4004_datapath.v 0 {} {value {@image22 intel_4004_fsm.v}} /home/vlsi16/24bvd1023/proj/intel_4004_fsm.v intel_4004_fsm.v 0 {} {value {@image22 intel_4004_top.v}} /home/vlsi16/24bvd1023/proj/intel_4004_top.v intel_4004_top.v 0 {} {value {@image22 tb_intel_4004.v}} /home/vlsi16/24bvd1023/proj/tb_intel_4004.v tb_intel_4004.v 0 {}} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_irun { -gui +linedebug +access+rwc -q} \
+ToolOption_NCElab {-logfile ncelab.log -errormax 15 -status -access +wc} \
+ToolOption_NCSim {-gui -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_HAL {-logfile hal.log} \
+ToolOption_SimVision {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimCompare {} \
+ToolOption_NCBrowse {} \
+ToolOption_HALDefEdit {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \
+ToolOption_NCDC {-logfile ncdc.log -messages -status} \
+ToolOption_DBUtil {} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV {-logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_irun { -gui +linedebug +access+rwc -q} \
+ToolOption_NCElab {-logfile ncelab.log -errormax 15 -status -access +wc} \
+ToolOption_NCSim {-gui -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_HAL {-logfile hal.log} \
+ToolOption_SimVision {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimCompare {} \
+ToolOption_NCBrowse {} \
+ToolOption_HALDefEdit {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \
+ToolOption_NCDC {-logfile ncdc.log -messages -status} \
+ToolOption_DBUtil {} \

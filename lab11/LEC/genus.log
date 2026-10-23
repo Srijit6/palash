@@ -1,0 +1,80 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:23:37.328594] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files synthesis/synthesis.tcl 
+Date:    Fri Oct 16 12:23:37 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     193087
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:23:40.203368] Periodic Lic check successful
+[12:23:40.203370] Feature usage summary:
+[12:23:40.203370] Genus_Synthesis
+Checking out license: Genus_Synthesis (3 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (7 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source synthesis/synthesis.tcl
+#@ Begin verbose source ./synthesis/synthesis.tcl
+@file(synthesis.tcl) 9: set LIB_DIR   /home/install/FOUNDRY/digital/90nm/dig/lib/
+@file(synthesis.tcl) 10: set LIB_NAME  slow.lib
+@file(synthesis.tcl) 11: set RTL_DIR   ../RTL/
+@file(synthesis.tcl) 12: set SDC_FILE  ../Constraints/constraints_top.sdc
+@file(synthesis.tcl) 15: file mkdir reports outputs
+@file(synthesis.tcl) 17: set_db init_lib_search_path $LIB_DIR
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib/
+@file(synthesis.tcl) 18: set_db init_hdl_search_path $RTL_DIR
+  Setting attribute of root '/': 'init_hdl_search_path' = ../RTL/
+@file(synthesis.tcl) 19: read_libs $LIB_NAME
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(synthesis.tcl) 21: read_hdl design.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'design.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(synthesis.tcl) 22: elaborate design_top
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'design_top'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./synthesis/synthesis.tcl
+1
+Encountered problems processing file: synthesis/synthesis.tcl
+WARNING: This version of the tool is 1575 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[12:37:30.065705] Cdslmd servers: cadence-c2s
+[12:37:30.065712] Feature usage summary:
+[12:37:30.065713] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,38 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Sep 18, 2026 at 12:49:55 IST
+xrun
+	-64bit
+	-access +rwc
+	../RTL/activity_power_top.v
+	../TB/tb_data_high.v
+file: ../TB/tb_data_high.v
+	module worklib.tb_data_high:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_data_high
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_data_high:v <0x39744524>
+			streams:   8, words:  4172
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           8       8
+		Scalar wires:        2       -
+		Vectored wires:      7       -
+		Always blocks:       1       1
+		Initial blocks:      2       2
+		Cont. assignments:   2       2
+		Pseudo assignments:  5       5
+	Writing initial simulation snapshot: worklib.tb_data_high:v
+Loading snapshot worklib.tb_data_high:v .................... Done
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 2030 NS + 0
+../TB/tb_data_high.v:42     #20 $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s003: Exiting on Sep 18, 2026 at 12:49:57 IST  (total: 00:00:02)

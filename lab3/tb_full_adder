@@ -1,0 +1,26 @@
+`timescale 1ns/1ps
+
+module tb_full_adder;
+
+    reg a, b, cin;
+    wire sum, cout;
+
+    full_adder uut (
+        .a(a), .b(b), .cin(cin),
+        .sum(sum), .cout(cout)
+    );
+
+    initial begin
+        // 1. All ports at 0
+        {a, b, cin} = 3'b000; #10; 
+        
+        // 2. All inputs flip 0->1. sum and cout both flip 0->1.
+        {a, b, cin} = 3'b111; #10;
+        
+        // 3. All inputs flip 1->0. sum and cout both flip 1->0.
+        {a, b, cin} = 3'b000; #10;
+        
+        $finish;
+    end
+
+endmodule

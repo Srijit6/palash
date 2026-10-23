@@ -1,0 +1,308 @@
+[10/15 18:19:15      0s] 
+[10/15 18:19:15      0s] Cadence Tempus(TM) Timing Solution.
+[10/15 18:19:15      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/15 18:19:15      0s] 
+[10/15 18:19:15      0s] Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+[10/15 18:19:15      0s] Options:	-files scripts/01_run_fail.tcl 
+[10/15 18:19:15      0s] Date:		Thu Oct 15 18:19:15 2026
+[10/15 18:19:15      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[10/15 18:19:15      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[10/15 18:19:15      0s] 
+[10/15 18:19:15      0s] License:
+[10/15 18:19:15      0s] 		[18:19:15.328650] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[10/15 18:19:19      0s] 		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+[10/15 18:19:19      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[10/15 18:19:19      0s] **WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+[10/15 18:19:27      8s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+[10/15 18:19:31     12s] @(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+[10/15 18:19:31     12s] @(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/15 18:19:31     12s] @(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+[10/15 18:19:31     12s] @(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+[10/15 18:19:31     12s] @(#)CDS: CPE v22.11-e028
+[10/15 18:19:31     12s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/15 18:19:31     12s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[10/15 18:19:31     12s] @(#)CDS: RCDB 11.15.0
+[10/15 18:19:31     12s] @(#)CDS: STYLUS 22.10-p002_1 (09/01/2022 08:10 PDT)
+[10/15 18:19:31     12s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[10/15 18:19:31     12s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_2672488_UHMDrl'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2672488_UHMDrl'.
+[10/15 18:19:31     12s] #@ Processing -files option
+[10/15 18:19:31     12s] Sourcing tcl/tk file 'scripts/01_run_fail.tcl' ...
+[10/15 18:19:31     12s] <CMD> read_lib /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib
+[10/15 18:19:31     12s] <CMD> read_verilog /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/netlist/01_fail.v
+[10/15 18:19:31     12s] <CMD> set_top_module setup_physical
+[10/15 18:19:31     12s] #% Begin Load MMMC data ... (date=10/15 18:19:31, mem=1150.3M)
+[10/15 18:19:31     12s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[10/15 18:19:32     12s] #% End Load MMMC data ... (date=10/15 18:19:31, total cpu=0:00:00.0, real=0:00:01.0, peak res=1151.6M, current mem=1151.6M)
+[10/15 18:19:32     12s] Loading view definition file from .ssv_emulate_view_definition_2672488.tcl
+[10/15 18:19:32     12s] Reading default_emulate_libset_max timing library '/home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib' ...
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'input_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'input_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'output_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'output_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_rise' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_fall' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_rise' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_fall' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+[10/15 18:19:32     12s] **ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_setup_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 147)
+**ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_hold_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 153)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 148)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 149)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 145)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 154)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 155)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 151)
+Read 7 cells in library 'teaching_sta_lib' 
+[10/15 18:19:32     13s] Ending "PreSetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1185.7M, current mem=1158.8M)
+[10/15 18:19:32     13s] *** End library_loading (cpu=0.00min, real=0.00min, mem=38.9M, fe_cpu=0.22min, fe_real=0.28min, fe_mem=1218.9M) ***
+[10/15 18:19:32     13s] #% Begin Load netlist data ... (date=10/15 18:19:32, mem=1158.8M)
+[10/15 18:19:32     13s] *** Begin netlist parsing (mem=1218.9M) ***
+[10/15 18:19:32     13s] Reading verilog netlist '/home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/netlist/01_fail.v'
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] *** Memory Usage v#1 (Current mem = 1343.965M, initial mem = 618.465M) ***
+[10/15 18:19:32     13s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1344.0M) ***
+[10/15 18:19:32     13s] #% End Load netlist data ... (date=10/15 18:19:32, total cpu=0:00:00.2, real=0:00:00.0, peak res=1229.4M, current mem=1225.4M)
+[10/15 18:19:32     13s] Set top cell to setup_physical.
+[10/15 18:19:32     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/15 18:19:32     13s] late library set: default_emulate_libset_max
+[10/15 18:19:32     13s] early library set: default_emulate_libset_min
+[10/15 18:19:32     13s] Completed consistency checks. Status: Successful
+[10/15 18:19:32     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/15 18:19:32     13s] late library set: default_emulate_libset_max
+[10/15 18:19:32     13s] early library set: default_emulate_libset_min
+[10/15 18:19:32     13s] Completed consistency checks. Status: Successful
+[10/15 18:19:32     13s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1238.1M, current mem=1238.1M)
+[10/15 18:19:32     13s] Building hierarchical netlist for Cell setup_physical ...
+[10/15 18:19:32     13s] ***** UseNewTieNetMode *****.
+[10/15 18:19:32     13s] *** Netlist is unique.
+[10/15 18:19:32     13s] ** info: there are 8 modules.
+[10/15 18:19:32     13s] ** info: there are 10 stdCell insts.
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] *** Memory Usage v#1 (Current mem = 1691.410M, initial mem = 618.465M) ***
+[10/15 18:19:32     13s] Set Default Input Pin Transition as 0.1 ps.
+[10/15 18:19:32     13s] Extraction setup Started 
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] Summary of Active RC-Corners : 
+[10/15 18:19:32     13s]  
+[10/15 18:19:32     13s]  Analysis View: default_emulate_view
+[10/15 18:19:32     13s]     RC-Corner Name        : default_emulate_rc_corner
+[10/15 18:19:32     13s]     RC-Corner Index       : 0
+[10/15 18:19:32     13s]     RC-Corner Temperature : 25 Celsius
+[10/15 18:19:32     13s]     RC-Corner Cap Table   : ''
+[10/15 18:19:32     13s]     RC-Corner PostRoute Res Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute Cap Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute XCap Factor       : 1
+[10/15 18:19:32     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/15 18:19:32     13s] late library set: default_emulate_libset_max
+[10/15 18:19:32     13s] early library set: default_emulate_libset_min
+[10/15 18:19:32     13s] Completed consistency checks. Status: Successful
+[10/15 18:19:32     13s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1737.7M, current mem=1494.2M)
+[10/15 18:19:32     13s] Reading timing constraints file '/dev/null' ...
+[10/15 18:19:32     13s] Current (total cpu=0:00:13.8, real=0:00:17.0, peak res=1829.9M, current mem=1829.9M)
+[10/15 18:19:32     13s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[10/15 18:19:32     13s] Summary for sequential cells identification: 
+[10/15 18:19:32     13s]   Identified SBFF number: 2
+[10/15 18:19:32     13s]   Identified MBFF number: 0
+[10/15 18:19:32     13s]   Identified SB Latch number: 0
+[10/15 18:19:32     13s]   Identified MB Latch number: 0
+[10/15 18:19:32     13s]   Not identified SBFF number: 0
+[10/15 18:19:32     13s]   Not identified MBFF number: 0
+[10/15 18:19:32     13s]   Not identified SB Latch number: 0
+[10/15 18:19:32     13s]   Not identified MB Latch number: 0
+[10/15 18:19:32     13s]   Number of sequential cells which are not FFs: 0
+[10/15 18:19:32     13s] Total number of combinational cells: 5
+[10/15 18:19:32     13s] Total number of sequential cells: 2
+[10/15 18:19:32     13s] Total number of tristate cells: 0
+[10/15 18:19:32     13s] Total number of level shifter cells: 0
+[10/15 18:19:32     13s] Total number of power gating cells: 0
+[10/15 18:19:32     13s] Total number of isolation cells: 0
+[10/15 18:19:32     13s] Total number of power switch cells: 0
+[10/15 18:19:32     13s] Total number of pulse generator cells: 0
+[10/15 18:19:32     13s] Total number of always on buffers: 0
+[10/15 18:19:32     13s] Total number of retention cells: 0
+[10/15 18:19:32     13s] Total number of physical cells: 0
+[10/15 18:19:32     13s] List of usable buffers: BUF_X1 BUF_X2
+[10/15 18:19:32     13s] Total number of usable buffers: 2
+[10/15 18:19:32     13s] List of unusable buffers:
+[10/15 18:19:32     13s] Total number of unusable buffers: 0
+[10/15 18:19:32     13s] List of usable inverters: INV_X1
+[10/15 18:19:32     13s] Total number of usable inverters: 1
+[10/15 18:19:32     13s] List of unusable inverters:
+[10/15 18:19:32     13s] Total number of unusable inverters: 0
+[10/15 18:19:32     13s] List of identified usable delay cells: DLY_X1
+[10/15 18:19:32     13s] Total number of identified usable delay cells: 1
+[10/15 18:19:32     13s] List of identified unusable delay cells:
+[10/15 18:19:32     13s] Total number of identified unusable delay cells: 0
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Deleting Cell Server Begin ...
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Deleting Cell Server End ...
+[10/15 18:19:32     13s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1860.1M, current mem=1860.1M)
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[10/15 18:19:32     13s] Summary for sequential cells identification: 
+[10/15 18:19:32     13s]   Identified SBFF number: 2
+[10/15 18:19:32     13s]   Identified MBFF number: 0
+[10/15 18:19:32     13s]   Identified SB Latch number: 0
+[10/15 18:19:32     13s]   Identified MB Latch number: 0
+[10/15 18:19:32     13s]   Not identified SBFF number: 0
+[10/15 18:19:32     13s]   Not identified MBFF number: 0
+[10/15 18:19:32     13s]   Not identified SB Latch number: 0
+[10/15 18:19:32     13s]   Not identified MB Latch number: 0
+[10/15 18:19:32     13s]   Number of sequential cells which are not FFs: 0
+[10/15 18:19:32     13s]  Visiting view : default_emulate_view
+[10/15 18:19:32     13s]    : PowerDomain = none : Weighted F : unweighted  = 250.00 (1.000) with rcCorner = 0
+[10/15 18:19:32     13s]    : PowerDomain = none : Weighted F : unweighted  = 250.00 (1.000) with rcCorner = -1
+[10/15 18:19:32     13s]  Visiting view : default_emulate_view
+[10/15 18:19:32     13s]    : PowerDomain = none : Weighted F : unweighted  = 250.00 (1.000) with rcCorner = 0
+[10/15 18:19:32     13s]    : PowerDomain = none : Weighted F : unweighted  = 250.00 (1.000) with rcCorner = -1
+[10/15 18:19:32     13s] TLC MultiMap info (StdDelay):
+[10/15 18:19:32     13s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + no RcCorner := 250ps
+[10/15 18:19:32     13s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + default_emulate_rc_corner := 250ps
+[10/15 18:19:32     13s]  Setting StdDelay to: 250ps
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Deleting Cell Server Begin ...
+[10/15 18:19:32     13s] 
+[10/15 18:19:32     13s] TimeStamp Deleting Cell Server End ...
+[10/15 18:19:32     13s] Extraction setup Started 
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] Summary of Active RC-Corners : 
+[10/15 18:19:32     13s]  
+[10/15 18:19:32     13s]  Analysis View: default_emulate_view
+[10/15 18:19:32     13s]     RC-Corner Name        : default_emulate_rc_corner
+[10/15 18:19:32     13s]     RC-Corner Index       : 0
+[10/15 18:19:32     13s]     RC-Corner Temperature : 25 Celsius
+[10/15 18:19:32     13s]     RC-Corner Cap Table   : ''
+[10/15 18:19:32     13s]     RC-Corner PostRoute Res Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute Cap Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute XCap Factor       : 1
+[10/15 18:19:32     13s] Extraction setup Started 
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] Summary of Active RC-Corners : 
+[10/15 18:19:32     13s]  
+[10/15 18:19:32     13s]  Analysis View: default_emulate_view
+[10/15 18:19:32     13s]     RC-Corner Name        : default_emulate_rc_corner
+[10/15 18:19:32     13s]     RC-Corner Index       : 0
+[10/15 18:19:32     13s]     RC-Corner Temperature : 25 Celsius
+[10/15 18:19:32     13s]     RC-Corner Cap Table   : ''
+[10/15 18:19:32     13s]     RC-Corner PostRoute Res Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute Cap Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute XCap Factor       : 1
+[10/15 18:19:32     13s] Extraction setup Started 
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] eee: Trim Metal Layers: { }
+[10/15 18:19:32     13s] Summary of Active RC-Corners : 
+[10/15 18:19:32     13s]  
+[10/15 18:19:32     13s]  Analysis View: default_emulate_view
+[10/15 18:19:32     13s]     RC-Corner Name        : default_emulate_rc_corner
+[10/15 18:19:32     13s]     RC-Corner Index       : 0
+[10/15 18:19:32     13s]     RC-Corner Temperature : 25 Celsius
+[10/15 18:19:32     13s]     RC-Corner Cap Table   : ''
+[10/15 18:19:32     13s]     RC-Corner PostRoute Res Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute Cap Factor        : 1
+[10/15 18:19:32     13s]     RC-Corner PostRoute XCap Factor       : 1
+[10/15 18:19:33     14s] <CMD> read_sdc /home/vlsi16/24bvd1023/lab10/ECO/LAB01_SETUP_PHYSICAL_FIX/sdc/01_fail.sdc
+[10/15 18:19:33     14s] Current (total cpu=0:00:14.1, real=0:00:18.0, peak res=1861.7M, current mem=1822.1M)
+[10/15 18:19:33     14s] INFO (CTE): Constraints read successfully.
+[10/15 18:19:33     14s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1823.6M, current mem=1823.6M)
+[10/15 18:19:33     14s] Current (total cpu=0:00:14.1, real=0:00:18.0, peak res=1861.7M, current mem=1823.6M)
+[10/15 18:19:33     14s] <CMD> report_timing -late -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+[10/15 18:19:33     14s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/15 18:19:33     14s] AAE DB initialization (MEM=2117.57 CPU=0:00:00.0 REAL=0:00:00.0) 
+[10/15 18:19:33     14s] #################################################################################
+[10/15 18:19:33     14s] # Design Name: setup_physical
+[10/15 18:19:33     14s] # Design Mode: 65nm
+[10/15 18:19:33     14s] # Analysis Mode: MMMC OCV 
+[10/15 18:19:33     14s] # Parasitics Mode: No SPEF/RCDB 
+[10/15 18:19:33     14s] # Signoff Settings: SI Off 
+[10/15 18:19:33     14s] #################################################################################
+[10/15 18:19:33     14s] Topological Sorting (REAL = 0:00:00.0, MEM = 2135.6M, InitMEM = 2135.6M)
+[10/15 18:19:33     14s] Start delay calculation (fullDC) (1 T). (MEM=2135.57)
+[10/15 18:19:33     14s] eee: Trim Metal Layers: { }
+[10/15 18:19:33     14s] eee: Trim Metal Layers: { }
+[10/15 18:19:33     14s] eee: Trim Metal Layers: { }
+[10/15 18:19:33     14s] eee: Trim Metal Layers: { }
+[10/15 18:19:33     14s] Start AAE Lib Loading. (MEM=2135.57)
+[10/15 18:19:33     14s] End AAE Lib Loading. (MEM=2154.64 CPU=0:00:00.0 Real=0:00:00.0)
+[10/15 18:19:33     14s] End AAE Lib Interpolated Model. (MEM=2154.64 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/15 18:19:33     14s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/15 18:19:33     14s] End delay calculation. (MEM=2335.15 CPU=0:00:00.0 REAL=0:00:00.0)
+[10/15 18:19:33     14s] End delay calculation (fullDC). (MEM=2335.15 CPU=0:00:00.1 REAL=0:00:00.0)
+[10/15 18:19:33     14s] *** CDM Built up (cpu=0:00:00.2  real=0:00:00.0  mem= 2335.2M) ***
+[10/15 18:19:33     14s] <CMD> report_timing -early -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+[10/15 18:19:33     14s] <CMD> exit
+[10/15 18:19:33     14s] 
+[10/15 18:19:33     14s] *** Memory Usage v#1 (Current mem = 2269.152M, initial mem = 618.465M) ***
+[10/15 18:19:33     14s] 
+[10/15 18:19:33     14s] *** Summary of all messages that are not suppressed in this session:
+[10/15 18:19:33     14s] Severity  ID               Count  Summary                                  
+[10/15 18:19:33     14s] ERROR     TECHLIB-1186         4  The '%s' table found for timing group wi...
+[10/15 18:19:33     14s] ERROR     TECHLIB-1204         2  Illegal value '%s' defined for attribute...
+[10/15 18:19:33     14s] ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+[10/15 18:19:33     14s] WARNING   TECHLIB-9108         8   '%s' not specified in the library, usin...
+[10/15 18:19:33     14s] *** Message Summary: 8 warning(s), 8 error(s)
+[10/15 18:19:33     14s] 
+[10/15 18:19:33     14s] --- Ending "Tempus Timing Solution" (totcpu=0:00:14.8, real=0:00:18.0, mem=2269.2M) ---

@@ -1,0 +1,159 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:44:17.328602] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/genus_gui.tcl 
+Date:    Sat Aug 29 12:44:17 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1273078
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:44:18.441792] Periodic Lic check successful
+[12:44:18.441801] Feature usage summary:
+[12:44:18.441802] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/genus_gui.tcl
+#@ Begin verbose source /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/genus_gui.tcl
+@file(genus_gui.tcl) 22: set LIB_ROOT "/home/install/FOUNDRY/digital"
+@file(genus_gui.tcl) 25: set stage "opt"
+@file(genus_gui.tcl) 26: if {[info exists ::env(NETLIST_STAGE)]} {
+    set stage $::env(NETLIST_STAGE)
+}
+@file(genus_gui.tcl) 29: if {[lsearch -exact {generic mapped opt} $stage] < 0} {
+    puts "ERROR: NETLIST_STAGE must be generic, mapped or opt (got '$stage')."
+    exit 1
+}
+@file(genus_gui.tcl) 35: set netlist_files [lsort [glob -nocomplain "*_${stage}.v"]]
+@file(genus_gui.tcl) 36: if {[llength $netlist_files] == 0} {
+    puts "ERROR: no *_${stage}.v in [pwd]"
+    puts "       cd into a <design>/<corner>/<node>/netlist directory first."
+    exit 1
+}
+@file(genus_gui.tcl) 41: if {[llength $netlist_files] > 1} {
+    puts "NOTE: several netlists here; using [lindex $netlist_files 0]"
+}
+@file(genus_gui.tcl) 44: set netlist_file [lindex $netlist_files 0]
+@file(genus_gui.tcl) 47: set top_module [regsub "_${stage}\$" [file rootname $netlist_file] ""]
+@file(genus_gui.tcl) 51: set parts [file split [file normalize [pwd]]]
+@file(genus_gui.tcl) 52: set node   ""
+@file(genus_gui.tcl) 53: set corner ""
+@file(genus_gui.tcl) 54: if {[llength $parts] >= 4 && [lindex $parts end] eq "netlist"} {
+    set node   [lindex $parts end-1]
+    set corner [lindex $parts end-2]
+}
+@file(genus_gui.tcl) 59: if {![regexp {^(180|90|45)$} $node] ||
+    [lsearch -exact {slow typical fast} $corner] < 0} {
+    puts "ERROR: cannot determine node/corner from this path:"
+    puts "       [pwd]"
+    puts "       Expected .../<design>/<corner>/<node>/netlist"
+    puts "       corner in {slow typical fast}, node in {180 90 45}"
+    exit 1
+}
+@file(genus_gui.tcl) 71: set lib_dir "${LIB_ROOT}/${node}nm/dig/lib"
+@file(genus_gui.tcl) 73: if {![file isdirectory $lib_dir]} {
+    puts "ERROR: library directory not found: $lib_dir"
+    exit 1
+}
+@file(genus_gui.tcl) 78: set lib_file ""
+@file(genus_gui.tcl) 79: foreach alias [list $corner] {
+    set exact [file join $lib_dir "${alias}.lib"]
+    if {[file exists $exact]} { set lib_file $exact; break }
+}
+@file(genus_gui.tcl) 83: if {$lib_file eq ""} {
+    foreach alias [list $corner] {
+        set hits [lsort [glob -nocomplain -directory $lib_dir "${alias}*.lib"]]
+        if {[llength $hits] > 0} { set lib_file [lindex $hits 0]; break }
+    }
+}
+@file(genus_gui.tcl) 89: if {$lib_file eq ""} {
+    puts "ERROR: no '$corner' library in $lib_dir"
+    exit 1
+}
+@file(genus_gui.tcl) 95: puts "-------------------------------------------------------------"
+-------------------------------------------------------------
+@file(genus_gui.tcl) 96: puts " Netlist : $netlist_file"
+ Netlist : fir_4tap_opt.v
+@file(genus_gui.tcl) 97: puts " Top     : $top_module"
+ Top     : fir_4tap
+@file(genus_gui.tcl) 98: puts " Node    : ${node}nm      Corner : $corner"
+ Node    : 90nm      Corner : typical
+@file(genus_gui.tcl) 99: puts " Library : $lib_file"
+ Library : /home/install/FOUNDRY/digital/90nm/dig/lib/typical.lib
+@file(genus_gui.tcl) 100: puts "-------------------------------------------------------------"
+-------------------------------------------------------------
+@file(genus_gui.tcl) 102: read_libs $lib_file
+
+Threads Configured:3
+
+  Message Summary for Library typical.lib:
+  ****************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  ****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'typical.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(genus_gui.tcl) 103: read_hdl -netlist $netlist_file
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+@file(genus_gui.tcl) 104: elaborate $top_module
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating structural top-level block 'fir_4tap' from file 'fir_4tap_opt.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating structural top-level block 'fir_4tap'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: fir_4tap, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: fir_4tap, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         1.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(genus_gui.tcl) 106: gui_show
+#@ End verbose source /home/vlsi38/24BVD1104/SUBMISSION/fir_lab/genus_gui.tcl
+WARNING: This version of the tool is 1527 days old.
+
+Lic Summary:
+[12:47:53.346147] Cdslmd servers: cadence-c2s
+[12:47:53.346154] Feature usage summary:
+[12:47:53.346154] Genus_Synthesis
+
+Normal exit.

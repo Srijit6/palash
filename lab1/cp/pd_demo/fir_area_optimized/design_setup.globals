@@ -1,0 +1,6 @@
+set init_verilog {fir_4tap_shared_mult_synth.v}
+set init_top_cell {fir_4tap_shared_mult}
+set init_lef_file {/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef}
+set init_pwr_net {VDD}
+set init_gnd_net {VSS}
+set init_mmmc_file {Default.view}

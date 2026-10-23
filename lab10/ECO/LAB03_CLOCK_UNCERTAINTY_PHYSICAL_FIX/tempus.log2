@@ -1,0 +1,261 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	-files scripts/01_run_fail.tcl 
+Date:		Thu Oct 15 18:24:35 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[18:24:35.328634] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2697028_w8uOTu'.
+#@ Processing -files option
+Sourcing tcl/tk file 'scripts/01_run_fail.tcl' ...
+<CMD> read_lib /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib
+<CMD> read_verilog /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/netlist/01_fail.v
+<CMD> set_top_module skew_physical
+#% Begin Load MMMC data ... (date=10/15 18:24:49, mem=1147.4M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/15 18:24:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1148.7M, current mem=1148.7M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_2697028.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib' ...
+**WARN: (TECHLIB-9108):	 'input_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'input_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'output_threshold_pct_rise' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'output_threshold_pct_fall' not specified in the library, using .lib default of '50%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_rise' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_lower_threshold_pct_fall' not specified in the library, using .lib default of '20%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_rise' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**WARN: (TECHLIB-9108):	 'slew_upper_threshold_pct_fall' not specified in the library, using .lib default of '80%'. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 2)
+**ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_setup_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 147)
+**ERROR: (TECHLIB-1204):	Illegal value 'clock_gating_hold_rising' defined for attribute 'timing_type'. The attribute will be ignored. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 153)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 148)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 149)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 145)
+**ERROR: (TECHLIB-1186):	The 'rise_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 154)
+**ERROR: (TECHLIB-1186):	The 'fall_constraint' table found for timing group with timing_type combinational. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 155)
+**ERROR: (TECHLIB-1256):	The timing group is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for timing group to find the details of the issues in this group. (File /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/lib/teaching_sta_physical.lib, Line 151)
+Read 7 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=38.9M, fe_cpu=0.24min, fe_real=0.23min, fe_mem=1218.6M) ***
+#% Begin Load netlist data ... (date=10/15 18:24:49, mem=1155.6M)
+*** Begin netlist parsing (mem=1218.6M) ***
+Reading verilog netlist '/home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/netlist/01_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1343.684M, initial mem = 619.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1343.7M) ***
+#% End Load netlist data ... (date=10/15 18:24:49, total cpu=0:00:00.3, real=0:00:00.0, peak res=1226.1M, current mem=1222.1M)
+Set top cell to skew_physical.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell skew_physical ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 8 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1692.129M, initial mem = 619.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:15.5, real=0:00:15.0, peak res=1824.7M, current mem=1824.7M)
+Total number of combinational cells: 5
+Total number of sequential cells: 2
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUF_X1 BUF_X2
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY_X1
+Total number of identified usable delay cells: 1
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi16/24bvd1023/lab10/ECO/LAB03_CLOCK_UNCERTAINTY_PHYSICAL_FIX/sdc/01_fail.sdc
+Current (total cpu=0:00:15.8, real=0:00:15.0, peak res=1856.0M, current mem=1816.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1820.5M, current mem=1820.5M)
+Current (total cpu=0:00:15.8, real=0:00:15.0, peak res=1856.0M, current mem=1820.5M)
+<CMD> report_timing -late -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2118.03 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: skew_physical
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2136.03)
+/dev/null
+End delay calculation. (MEM=2335.61 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2335.61 CPU=0:00:00.1 REAL=0:00:00.0)
+Path 1: VIOLATED Setup Check with Pin U_CAPTURE/CLK 
+Endpoint:   U_CAPTURE/D (v) checked with  leading edge of 'CLK'
+Beginpoint: U_LAUNCH/Q  (v) triggered by  leading edge of 'CLK'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
+- Setup                         0.200
++ Phase Shift                   4.400
+- Uncertainty                   0.400
+= Required Time                 3.800
+- Arrival Time                  4.200
+= Slack Time                   -0.400
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ------------------------------------------------------------
+      Instance   Arc           Cell       Delay  Arrival  Required  
+                                                 Time     Time  
+      ------------------------------------------------------------
+      -          clk ^         -          -      0.000    -0.400  
+      U_LAUNCH   CLK ^ -> Q v  DFFPOS_X1  0.200  0.200    -0.200  
+      b0         A v -> Y v    BUF_X1     0.500  0.700    0.300  
+      b1         A v -> Y v    BUF_X1     0.500  1.200    0.800  
+      b2         A v -> Y v    BUF_X1     0.500  1.700    1.300  
+      b3         A v -> Y v    BUF_X1     0.500  2.200    1.800  
+      b4         A v -> Y v    BUF_X1     0.500  2.700    2.300  
+      b5         A v -> Y v    BUF_X1     0.500  3.200    2.800  
+      b6         A v -> Y v    BUF_X1     0.500  3.700    3.300  
+      b7         A v -> Y v    BUF_X1     0.500  4.200    3.800  
+      U_CAPTURE  D v           DFFPOS_X1  0.000  4.200    3.800  
+      ------------------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      -----------------------------------------------------
+      Instance   Arc    Cell       Delay  Arrival  Required  
+                                          Time     Time  
+      -----------------------------------------------------
+      -          clk ^  -          -      0.000    0.400  
+      U_CAPTURE  CLK ^  DFFPOS_X1  0.000  0.000    0.400  
+      -----------------------------------------------------
+
+<CMD> report_timing -early -path_type full_clock -from [get_pins U_LAUNCH/CLK] -to [get_pins U_CAPTURE/D] -max_paths 1
+Path 1: MET Hold Check with Pin U_CAPTURE/CLK 
+Endpoint:   U_CAPTURE/D (v) checked with  leading edge of 'CLK'
+Beginpoint: U_LAUNCH/Q  (v) triggered by  leading edge of 'CLK'
+Path Groups: {CLK}
+Other End Arrival Time          0.000
++ Hold                          0.100
++ Phase Shift                   0.000
+= Required Time                 0.100
+  Arrival Time                  4.200
+  Slack Time                    4.100
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Timing Path:
+      ------------------------------------------------------------
+      Instance   Arc           Cell       Delay  Arrival  Required  
+                                                 Time     Time  
+      ------------------------------------------------------------
+      -          clk ^         -          -      0.000    -4.100  
+      U_LAUNCH   CLK ^ -> Q v  DFFPOS_X1  0.200  0.200    -3.900  
+      b0         A v -> Y v    BUF_X1     0.500  0.700    -3.400  
+      b1         A v -> Y v    BUF_X1     0.500  1.200    -2.900  
+      b2         A v -> Y v    BUF_X1     0.500  1.700    -2.400  
+      b3         A v -> Y v    BUF_X1     0.500  2.200    -1.900  
+      b4         A v -> Y v    BUF_X1     0.500  2.700    -1.400  
+      b5         A v -> Y v    BUF_X1     0.500  3.200    -0.900  
+      b6         A v -> Y v    BUF_X1     0.500  3.700    -0.400  
+      b7         A v -> Y v    BUF_X1     0.500  4.200    0.100  
+      U_CAPTURE  D v           DFFPOS_X1  0.000  4.200    0.100  
+      ------------------------------------------------------------
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+     Other End Path:
+      -----------------------------------------------------
+      Instance   Arc    Cell       Delay  Arrival  Required  
+                                          Time     Time  
+      -----------------------------------------------------
+      -          clk ^  -          -      0.000    4.100  
+      U_CAPTURE  CLK ^  DFFPOS_X1  0.000  0.000    4.100  
+      -----------------------------------------------------
+
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 2269.613M, initial mem = 619.465M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     TECHLIB-1186         4  The '%s' table found for timing group wi...
+ERROR     TECHLIB-1204         2  Illegal value '%s' defined for attribute...
+ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+WARNING   TECHLIB-9108         8   '%s' not specified in the library, usin...
+*** Message Summary: 8 warning(s), 8 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:00:16.5, real=0:00:16.0, mem=2269.6M) ---

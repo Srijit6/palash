@@ -1,0 +1,73 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:59:27.328658] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Fri Aug 07 12:59:27 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     586720
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:59:30.458232] Periodic Lic check successful
+[12:59:30.458242] Feature usage summary:
+[12:59:30.458242] Genus_Synthesis
+Checking out license: Genus_Synthesis (3 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 2: set TOP_MODULE "fir_4tap"
+@file(fir_4taps.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(fir_4taps.tcl) 8: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(fir_4taps.tcl) 9: read_hdl {DFF.v fir_4tap.v}
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'DFF.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'fir_4tap.v'.
+@file(fir_4taps.tcl) 10: elaborate 
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(fir_4taps.tcl) 11: read_sdc fir_4tap.sdc
+#@ End verbose source ./fir_4taps.tcl
+Design not exist for read_sdc
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1505 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 231s, ST: 7s, FG: 7s, CPU: 1.9%}, MEM {curr: 1.1G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.4, cpu: 64, total: 2014.9G, free: 1960.2G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 232s, ST: 7s, FG: 7s, CPU: 1.9%}, MEM {curr: 1.1G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.4, cpu: 64, total: 2014.9G, free: 1960.1G}
+Abnormal exit.

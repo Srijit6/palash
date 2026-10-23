@@ -1,0 +1,4 @@
+s1(18Sep2026:12:49:45):  xrun -64bit -access +rwc ../RTL/activity_power_top.v ../TB/tb_clk_low.v 
+s2(18Sep2026:12:49:48):  xrun -64bit -access +rwc ../RTL/activity_power_top.v ../TB/tb_clk_high.v 
+s3(18Sep2026:12:49:51):  xrun -64bit -access +rwc ../RTL/activity_power_top.v ../TB/tb_data_low.v 
+s4(18Sep2026:12:49:55):  xrun -64bit -access +rwc ../RTL/activity_power_top.v ../TB/tb_data_high.v 
